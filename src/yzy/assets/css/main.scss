@@ -1,0 +1,8 @@
+@import "weui.min";
+@import "jquery-weui.min";
+@function rem($px) {
+  @return $px /25.6  * 1rem;
+}
+body {
+  font-size: rem(25.6);
+}
