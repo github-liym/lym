@@ -1634,4 +1634,52 @@ button.swiper-pagination-bullet { border: none; margin: 0; padding: 0; -webkit-b
 
 .weui-panel .weui-media-box__title-after { color: #9b9b9b; font-size: .65rem; float: right; }
 
-body { font-size: 1rem; }
+* { margin: 0; padding: 0; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+
+body { padding: 0; margin: 0 auto; }
+
+textarea { resize: none; }
+
+input, button { outline: 0; }
+
+input:focus, button:focus { outline: 0; }
+
+button { cursor: pointer; }
+
+ul, ol { padding: 0; margin: 0; }
+
+ul li, ol li { list-style: none; }
+
+a { color: inherit; text-decoration: none; }
+
+a:hover, a:focus { text-decoration: none; color: inherit; }
+
+a:focus { outline: none; }
+
+.cover { background: no-repeat center; -moz-background-size: cover; background-size: cover; }
+
+.cover.radius { -moz-border-radius: 50%; border-radius: 50%; }
+
+.cover:before { content: ''; display: block; padding-top: 100%; }
+
+.teacher-wrap { padding: 0.52083rem; }
+
+.teacher-wrap .cover { border: 0.13021rem solid #fff; }
+
+.teacher-wrap .name { font-size: 0; margin-top: 0.26042rem; }
+
+.teacher-wrap .name .lg { color: #000; font-size: 0.78125rem; }
+
+.teacher-wrap .name .sm { font-size: 0.625rem; }
+
+.teacher-wrap .top { display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -moz-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -moz-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-orient: vertical; -webkit-box-direction: normal; -moz-box-orient: vertical; -moz-box-direction: normal; -ms-flex-direction: column; flex-direction: column; background: url("../images/bg-red.png") no-repeat center; -moz-background-size: 100% 100%; background-size: 100% 100%; height: 6.51042rem; -moz-border-radius: 0.13021rem; border-radius: 0.13021rem; }
+
+.teacher-wrap .top .cover { -webkit-box-shadow: 0px 3px 5px #fc7c62; -moz-box-shadow: 0px 3px 5px #fc7c62; box-shadow: 0px 3px 5px #fc7c62; }
+
+.teacher-wrap .teacher-avatar { width: 4.16667rem; }
+
+.teacher-list { display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-pack: justify; -moz-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
+
+.teacher-list .item { display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -moz-box-orient: vertical; -moz-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -moz-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -moz-box-pack: center; -ms-flex-pack: center; justify-content: center; background: url("../images/bg-yellow.png") no-repeat center; -moz-background-size: 100% 100%; background-size: 100% 100%; width: 48.6%; height: 6.51042rem; -moz-border-radius: 0.13021rem; border-radius: 0.13021rem; margin-top: 0.52083rem; }
+
+.teacher-list .teacher-avatar { -webkit-box-shadow: 0px 3px 5px #fcbe8f; -moz-box-shadow: 0px 3px 5px #fcbe8f; box-shadow: 0px 3px 5px #fcbe8f; }

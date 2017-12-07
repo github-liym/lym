@@ -65,7 +65,7 @@ gulp.task('watch',function () {
 gulp.task('browser-sync',['watch'],function(){
 	browserSync.init({
 		files: ['dist/**/*'],
-		proxy: 'localhost:80'
+		proxy: 'localhost:8888'
 	});
 });
 
