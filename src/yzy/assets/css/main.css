@@ -1638,7 +1638,7 @@ button.swiper-pagination-bullet { border: none; margin: 0; padding: 0; -webkit-b
 
 body { padding: 0; margin: 0 auto; }
 
-textarea { resize: none; }
+textarea { width: 100%; resize: none; }
 
 input, button { outline: 0; }
 
@@ -1656,13 +1656,17 @@ a:hover, a:focus { text-decoration: none; color: inherit; }
 
 a:focus { outline: none; }
 
+html { background: #f6f6f6; }
+
+html, body { height: 100%; }
+
 .cover { background: no-repeat center; -moz-background-size: cover; background-size: cover; }
 
 .cover.radius { -moz-border-radius: 50%; border-radius: 50%; }
 
 .cover:before { content: ''; display: block; padding-top: 100%; }
 
-.teacher-wrap { padding: 0.52083rem; }
+.teacher-wrap { padding: 0.52083rem; min-height: 100%; background: #fff; }
 
 .teacher-wrap .cover { border: 0.13021rem solid #fff; }
 
@@ -1683,3 +1687,27 @@ a:focus { outline: none; }
 .teacher-list .item { display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -moz-box-orient: vertical; -moz-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -moz-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -moz-box-pack: center; -ms-flex-pack: center; justify-content: center; background: url("../images/bg-yellow.png") no-repeat center; -moz-background-size: 100% 100%; background-size: 100% 100%; width: 48.6%; height: 6.51042rem; -moz-border-radius: 0.13021rem; border-radius: 0.13021rem; margin-top: 0.52083rem; }
 
 .teacher-list .teacher-avatar { -webkit-box-shadow: 0px 3px 5px #fcbe8f; -moz-box-shadow: 0px 3px 5px #fcbe8f; box-shadow: 0px 3px 5px #fcbe8f; }
+
+.col-3 .weui-uploader__box { position: relative; float: left; width: -moz-calc(33.33% - 9px); width: calc(33.33% - 9px); margin-right: 9px; margin-bottom: 9px; background: no-repeat center; -moz-background-size: cover; background-size: cover; }
+
+.col-3 .weui-uploader__box:before { content: ''; display: block; padding-top: 100%; }
+
+.col-3 .weui-uploader__box.weui-uploader__img { background-image: url("../images/issue.jpg"); }
+
+.col-3 .weui-uploader__box.weui-uploader__video { background-image: url("../images/issue2.jpg"); }
+
+.col-3 .weui-uploader__file { width: -moz-calc(33.33% - 9px); width: calc(33.33% - 9px); height: auto; }
+
+.col-3 .weui-uploader__file:after { content: ''; display: block; padding-top: 100%; }
+
+.class-dynamic__issue { padding: 0.52083rem; }
+
+.class-dynamic__issue .weui-uploader { padding: 0.78125rem 0.78125rem; padding-bottom: -moz-calc(0.78125rem - 3px); padding-bottom: calc(0.78125rem - 3px); background: #fff; margin-top: 0.52083rem; -moz-border-radius: 5px; border-radius: 5px; }
+
+.class-dynamic__issue .btn-f6775d { display: block; width: 86.66%; margin: 1.04167rem auto 0; }
+
+.btn-f6775d { background: #f6775d; font-size: 0.72917rem; line-height: 3.21429; text-align: center; color: #fff; border: none; -moz-border-radius: 1.17188rem; border-radius: 1.17188rem; }
+
+.class-dynamic__controller { font-size: 0.78125rem; color: #6e6e6e; }
+
+.class-dynamic__controller textarea { height: 5.46875rem; border: 0px; -moz-border-radius: 5px; border-radius: 5px; background: #fff; padding: 8px; }

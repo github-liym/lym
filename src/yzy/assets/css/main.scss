@@ -13,6 +13,7 @@ body {
   margin: 0 auto;
 }
 textarea {
+  width: 100%;
   resize: none;
 }
 input,button {
@@ -43,6 +44,12 @@ a {
     outline: none;
   }
 }
+html {
+  background: #f6f6f6;
+}
+html,body {
+  height: 100%;
+}
 .cover {
   background: no-repeat center;
   background-size: cover;
@@ -58,6 +65,8 @@ a {
 
 .teacher-wrap {
   padding: rem(20);
+  min-height: 100%;
+  background: #fff;
   .cover {
     border: rem(5) solid #fff;
   }
@@ -109,5 +118,78 @@ a {
   }
   .teacher-avatar {
     box-shadow: 0px 3px 5px #fcbe8f;
+  }
+}
+
+.class-dynamic {
+
+}
+
+.col-3 {
+  .weui-uploader__box {
+    position: relative;
+    float: left;
+    width: calc(33.33% - 9px);
+    margin-right: 9px;
+    margin-bottom: 9px;
+    background: no-repeat center;
+    background-size: cover;
+    &:before {
+      content: '';
+      display: block;
+      padding-top: 100%;
+    }
+    &.weui-uploader__img {
+      background-image: url("../images/issue.jpg");
+    }
+    &.weui-uploader__video {
+      background-image: url("../images/issue2.jpg");
+    }
+  }
+  .weui-uploader__file {
+    width: calc(33.33% - 9px);
+    height: auto;
+    &:after {
+      content: '';
+      display: block;
+      padding-top: 100%;
+    }
+  }
+}
+.class-dynamic__issue {
+  padding: rem(20);
+  .weui-uploader {
+    padding: rem(30) rem(30);
+    padding-bottom: calc(0.78125rem - 3px);
+    background: #fff;
+    margin-top: rem(20);
+
+    border-radius: 5px;
+  }
+  .btn-f6775d {
+    display: block;
+    width: 86.66%;
+    margin: rem(40) auto 0;
+  }
+}
+
+.btn-f6775d {
+  background: #f6775d;
+  font-size: rem(28);
+  line-height: (90/28);
+  text-align: center;
+  color: #fff;
+  border: none;
+  border-radius: rem(45);
+}
+.class-dynamic__controller {
+  font-size: rem(30);
+  color: #6e6e6e;
+  textarea {
+    height: rem(210);
+    border: 0px;
+    border-radius: 5px;
+    background: #fff;
+    padding: 8px;
   }
 }

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=no">
+	<title>发布班级动态</title>
+	<link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+<div class="class-dynamic class-dynamic__issue">
+	<div class="class-dynamic__controller">
+		<textarea placeholder="说点什么有趣的吧..."></textarea>
+	</div>
+	<div class="weui-uploader col-3">
+		<div class="weui-uploader__bd">
+			<ul class="weui-uploader__files" id="uploaderFiles">
+				<li class="weui-uploader__file" style="background-image:url(assets/images/temp/1.jpg)"></li>
+				<li class="weui-uploader__file" style="background-image:url(assets/images/temp/4.jpg)"></li>
+				<li class="weui-uploader__file weui-uploader__file_status" style="background-image:url(assets/images/temp/5.jpg)">
+					<div class="weui-uploader__file-content">
+						<i class="weui-icon-warn"></i>
+					</div>
+				</li>
+				<li class="weui-uploader__file weui-uploader__file_status" style="background-image:url(assets/images/temp/5.jpg)">
+					<div class="weui-uploader__file-content">50%</div>
+				</li>
+			</ul>
+			<div class="weui-uploader__box weui-uploader__img">
+				<input id="uploaderInput" class="weui-uploader__input" type="file" accept="image/*" multiple="">
+			</div>
+			<div class="weui-uploader__box weui-uploader__video">
+				<input id="uploaderInput2" class="weui-uploader__input" type="file" accept="image/*" multiple="">
+			</div>
+		</div>
+	</div>
+	<button class="btn-f6775d">提交</button>
+</div>
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/jquery-weui.min.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
