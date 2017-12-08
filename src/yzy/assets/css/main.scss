@@ -50,6 +50,15 @@ html {
 html,body {
   height: 100%;
 }
+pre{
+  white-space: pre-wrap!important;
+  word-wrap: break-word!important;
+  *white-space:normal!important;
+  background: transparent;
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
 .cover {
   background: no-repeat center;
   background-size: cover;
@@ -61,6 +70,18 @@ html,body {
     display: block;
     padding-top: 100%;
   }
+}
+.clearfix:after {
+  content:"";
+  display: block;
+  clear:both;
+}
+.omit {
+  display: inline-block;
+  max-width: 100%;
+  white-space:nowrap;
+  overflow:hidden;
+  text-overflow:ellipsis;
 }
 
 .teacher-wrap {
@@ -122,8 +143,128 @@ html,body {
 }
 
 .class-dynamic {
-
+  overflow: hidden;
 }
+.class-dynamic__list {
+  padding-bottom: rem(20);
+  overflow: hidden;
+}
+.dynamic__item {
+  position: relative;
+  margin-top: rem(20);
+  background: #fff;
+  padding: rem(30) rem(115) rem(40) rem(140);
+  font-size: rem(24);
+  overflow: hidden;
+  .avatar {
+    position: absolute;
+    top: rem(30);
+    left: rem(30);
+    display: block;
+    width: rem(90);
+  }
+  .classes {
+    font-size: rem(30);
+    color: #616796;
+  }
+  .desc {
+    font-size: rem(28);
+    line-height: (48/28);
+    margin-top: rem(5);
+  }
+  .class-dynamic__album {
+    margin-right: -9px;
+    font-size: 0px;
+    margin-top: 9px;
+    li {
+      display: inline-block;
+      width: calc(33.333% - 9px);
+      margin-right: 9px;
+      margin-bottom: 9px;
+    }
+    .cover {
+      display: block;
+    }
+  }
+  .other {
+    font-size: rem(22);
+    color: #6e6e6e;
+  }
+  .time {
+    float: left;
+  }
+  .operation {
+    float: right;
+    .icon-label {
+      margin-left: rem(30);
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+  }
+  .like-list {
+    border-top: 1px solid #ededed;
+    position: relative;
+    padding-left: rem(35);
+    padding-top: rem(15);
+    margin-top: rem(12);
+    color: #6e6e6e;
+  }
+  .icon-label__heart-o {
+    position: absolute;
+    left: 0;
+    top: rem(25);
+  }
+  .comment-wrap {
+    margin-top: rem(15);
+    line-height: 1.5;
+    li {
+      margin-top: rem(10);
+    }
+  }
+}
+.comment-controller__wrap {
+  font-size: rem(30);
+  margin-top: rem(20);
+  .comment-controller {
+    background: #fcfcfc;
+    border: 1px solid #dcdcdc;
+    height: rem(54);
+    padding: 0 rem(10);
+  }
+}
+.comment-wrap {
+  .name {
+    color: #616796;
+  }
+}
+
+.my-work {
+  overflow: hidden;
+  .classes-type {
+    font-size: rem(18);
+    line-height: (24/18);
+    border-radius: 3px;
+    color: #fff;
+    background: #f6775d;
+    padding: 0 5px;
+  }
+  .dynamic__item {
+    padding-bottom: rem(30);
+  }
+  .work-add__btn {
+    position: fixed;
+    right: 0;
+    bottom: 20%;
+    display: block;
+    width: rem(94);
+    background-image: url("../images/work-add.png");
+    &:before {
+      padding-top: (106/94)*100%;
+    }
+  }
+}
+
 
 .col-3 {
   .weui-uploader__box {
@@ -192,4 +333,41 @@ html,body {
     background: #fff;
     padding: 8px;
   }
+}
+
+.icon-label {
+  display: inline-block;
+  width: rem(24);
+  background: no-repeat center;
+  background-size: cover;
+  &:before {
+    content: '';
+    display: block;
+    padding-top: (21/24)*100%;
+  }
+  &.icon-label__heart {
+    background-image: url(../images/icon/heart.png);
+    &:before {
+      padding-top: (21/24)*100%;
+    }
+  }
+  &.icon-label__heart-red {
+    @extend .icon-label__heart;
+    background-image: url(../images/icon/heart-red.png);
+  }
+  &.icon-label__heart-o {
+    width: rem(20);
+    background-image: url(../images/icon/heart-o.png);
+    &:before {
+      padding-top: (18/20)*100%;
+    }
+  }
+  &.icon-label__return {
+    width: rem(26);
+    background-image: url(../images/icon/return.png);
+    &:before {
+      padding-top: (22/26)*100%;
+    }
+  }
+
 }
