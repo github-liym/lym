@@ -1706,12 +1706,6 @@ pre { white-space: pre-wrap !important; word-wrap: break-word !important; *white
 
 .dynamic__item .desc { font-size: 0.72917rem; line-height: 1.71429; margin-top: 0.13021rem; }
 
-.dynamic__item .class-dynamic__album { margin-right: -9px; font-size: 0px; margin-top: 9px; }
-
-.dynamic__item .class-dynamic__album li { display: inline-block; width: -moz-calc(33.333% - 9px); width: calc(33.333% - 9px); margin-right: 9px; margin-bottom: 9px; }
-
-.dynamic__item .class-dynamic__album .cover { display: block; }
-
 .dynamic__item .other { font-size: 0.57292rem; color: #6e6e6e; }
 
 .dynamic__item .time { float: left; }
@@ -1735,6 +1729,12 @@ pre { white-space: pre-wrap !important; word-wrap: break-word !important; *white
 .comment-controller__wrap .comment-controller { background: #fcfcfc; border: 1px solid #dcdcdc; height: 1.40625rem; padding: 0 0.26042rem; }
 
 .comment-wrap .name { color: #616796; }
+
+.grid__album { margin-right: -9px; font-size: 0px; margin-top: 9px; }
+
+.grid__album li { display: inline-block; width: -moz-calc(33.333% - 9px); width: calc(33.333% - 9px); margin-right: 9px; margin-bottom: 9px; }
+
+.grid__album .cover { display: block; }
 
 .my-work { overflow: hidden; }
 
@@ -1770,6 +1770,14 @@ pre { white-space: pre-wrap !important; word-wrap: break-word !important; *white
 
 .class-dynamic__controller textarea { height: 5.46875rem; border: 0px; -moz-border-radius: 5px; border-radius: 5px; background: #fff; padding: 8px; }
 
+.teacher-panel .desc { margin-top: 0.39063rem; font-size: 0.72917rem; line-height: 1.71429; }
+
+.teacher-info__list { background: #fff; -moz-border-radius: 5px; border-radius: 5px; padding: 0 0.52083rem; color: #222222; font-size: 0.78125rem; margin-top: 0.52083rem; }
+
+.teacher-info__list .item { display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -moz-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -moz-box-align: center; -ms-flex-align: center; align-items: center; height: 2.55208rem; border-top: 1px solid #f0f0f0; }
+
+.teacher-info__list .item:first-child { border-top: 0px; }
+
 .icon-label { display: inline-block; width: 0.625rem; background: no-repeat center; -moz-background-size: cover; background-size: cover; }
 
 .icon-label:before { content: ''; display: block; padding-top: 87.5%; }
@@ -1787,3 +1795,21 @@ pre { white-space: pre-wrap !important; word-wrap: break-word !important; *white
 .icon-label.icon-label__return { width: 0.67708rem; background-image: url(../images/icon/return.png); }
 
 .icon-label.icon-label__return:before { padding-top: 84.61538%; }
+
+.teacher-info__wrap { min-height: 100%; padding: 0.52083rem; }
+
+.teacher-info__wrap .teacher-panel { margin-top: 0.52083rem; background: #fff; -moz-border-radius: 5px; border-radius: 5px; padding: 0.52083rem 1.19792rem; }
+
+.teacher-info__wrap .teacher-panel .title-label { margin: 0 -0.67708rem; }
+
+.teacher-info__wrap .grid__album { margin-top: 0.39063rem; }
+
+.teacher-info__banner { position: relative; background-image: url("../images/banner_03.png"); -moz-border-radius: 5px; border-radius: 5px; }
+
+.teacher-info__banner:before { padding-top: 42.25352%; }
+
+.teacher-info__avatar { position: absolute; left: 50%; top: 50%; width: 5.07813rem; margin-left: -2.53906rem; margin-top: -2.53906rem; -moz-border-radius: 50%; border-radius: 50%; border: 0.20833rem solid #fff; -webkit-box-shadow: 0 0 0 3px #f6775d; -moz-box-shadow: 0 0 0 3px #f6775d; box-shadow: 0 0 0 3px #f6775d; }
+
+.title-label { font-size: 0.78125rem; color: #222222; }
+
+.title-label .line-red { display: inline-block; width: 0.15625rem; height: 0.83333rem; background: #f6775d; vertical-align: middle; margin-right: 0.52083rem; }
