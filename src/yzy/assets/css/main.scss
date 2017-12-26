@@ -1,7 +1,7 @@
 @import "weui.min";
 @import "jquery-weui.min";
 @function rem($px) {
-  @return ($px /25.6)*(480/720)  * 1rem;
+  @return ($px /20)*(320/750)  * 1rem;
 }
 * {
   margin: 0;
@@ -265,6 +265,17 @@ pre{
   }
 }
 
+.btn-edit__fixed {
+  position: fixed;
+  right: 0;
+  bottom: 20%;
+  display: block;
+  width: rem(94);
+  background-image: url("../images/work-add.png");
+  &:before {
+    padding-top: (106/94)*100%;
+  }
+}
 
 .col-3 {
   .weui-uploader__box {
@@ -444,30 +455,120 @@ pre{
   }
 }
 
+.text-616896 {
+  color: #616896;
+}
+.text-222222 {
+  color: #222222;
+}
+
+i.icon {
+  display: inline-block;
+  &:before {
+    content: '';
+    display: block;
+    padding-top: 100%;
+  }
+  &.i-refuse,&.i-agree {
+    width: rem(100);
+    background-image: url("../images/icon/i-refuse.png");
+    transform: rotate(-25deg);
+    &:before {
+      padding-top: (55/100)*100%;
+    }
+  }
+  &.i-agree {
+    background-image: url("../images/icon/i-agree.png");
+  }
+}
+
 .list-simple__reply {
+  line-height: 1.2;
+  padding-top: rem(20);
   .item-wrap {
     background: #fff;
     margin-bottom: rem(20);
+    padding: rem(10) rem(30);
   }
-  .cover {
+  .statu {
+    display: flex;
+    flex: 1;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    .weui-btn {
+      margin: 0 ;
+    }
+  }
+  .avatar {
     width: rem(120);
+    margin-right: rem(15);
   }
   .message {
     font-size: rem(24);
+    border-top: 1px solid #dcdcdc;
+    line-height: 2;
+    color: #6a6a6a;
+    padding: rem(10) 0;
   }
   .time {
     font-size: rem(20);
     color: #6e6e6e;
+    line-height: 1;
+  }
+  .weui-cell__ft {
+    display: flex;
+    align-self: stretch;
+    flex-direction: column;
+    width: rem(250);
+    margin-left: rem(15);
   }
   .weui-btn {
     font-size: rem(28);
     line-height: (54/28);
     border-radius: rem(54);
+    padding: 0 rem(30);
   }
   .btn-red {
     background: #f98063;
   }
   .btn-green {
     background: #81d64d;
+  }
+  .text-616896 {
+    font-size: rem(30);
+    margin-bottom: rem(15);
+  }
+  .text-222222 {
+    font-size: rem(28);
+  }
+  .weui-cell {
+    align-items: flex-start;
+    padding: rem(20) 0 ;
+  }
+}
+.leaveList {
+  .text-616896 {
+    line-height: 1;
+  }
+  .time {
+    display: flex;
+    justify-content: space-between;
+  }
+  .weui-cell__bd {
+    display: flex;
+    flex-direction: column;
+    align-self: stretch;
+    justify-content: space-between;
+  }
+  .text-616896 {
+    margin-bottom: rem(10);
+  }
+  .leave-info {
+    display: flex;
+    margin-bottom: rem(20);
+  }
+  .leave-info__l {
+    flex: 1;
   }
 }
