@@ -1813,3 +1813,17 @@ pre { white-space: pre-wrap !important; word-wrap: break-word !important; *white
 .title-label { font-size: 0.78125rem; color: #222222; }
 
 .title-label .line-red { display: inline-block; width: 0.15625rem; height: 0.83333rem; background: #f6775d; vertical-align: middle; margin-right: 0.52083rem; }
+
+.list-simple__reply .item-wrap { background: #fff; margin-bottom: 0.52083rem; }
+
+.list-simple__reply .cover { width: 3.125rem; }
+
+.list-simple__reply .message { font-size: 0.625rem; }
+
+.list-simple__reply .time { font-size: 0.52083rem; color: #6e6e6e; }
+
+.list-simple__reply .weui-btn { font-size: 0.72917rem; line-height: 1.92857; -moz-border-radius: 1.40625rem; border-radius: 1.40625rem; }
+
+.list-simple__reply .btn-red { background: #f98063; }
+
+.list-simple__reply .btn-green { background: #81d64d; }

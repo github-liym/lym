@@ -443,3 +443,31 @@ pre{
     margin-right: rem(20);
   }
 }
+
+.list-simple__reply {
+  .item-wrap {
+    background: #fff;
+    margin-bottom: rem(20);
+  }
+  .cover {
+    width: rem(120);
+  }
+  .message {
+    font-size: rem(24);
+  }
+  .time {
+    font-size: rem(20);
+    color: #6e6e6e;
+  }
+  .weui-btn {
+    font-size: rem(28);
+    line-height: (54/28);
+    border-radius: rem(54);
+  }
+  .btn-red {
+    background: #f98063;
+  }
+  .btn-green {
+    background: #81d64d;
+  }
+}
