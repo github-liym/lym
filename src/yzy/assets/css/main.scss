@@ -172,20 +172,6 @@ pre{
     line-height: (48/28);
     margin-top: rem(5);
   }
-  .class-dynamic__album {
-    margin-right: -9px;
-    font-size: 0px;
-    margin-top: 9px;
-    li {
-      display: inline-block;
-      width: calc(33.333% - 9px);
-      margin-right: 9px;
-      margin-bottom: 9px;
-    }
-    .cover {
-      display: block;
-    }
-  }
   .other {
     font-size: rem(22);
     color: #6e6e6e;
@@ -239,6 +225,20 @@ pre{
   }
 }
 
+.grid__album {
+  margin-right: -9px;
+  font-size: 0px;
+  margin-top: 9px;
+  li {
+    display: inline-block;
+    width: calc(33.333% - 9px);
+    margin-right: 9px;
+    margin-bottom: 9px;
+  }
+  .cover {
+    display: block;
+  }
+}
 .my-work {
   overflow: hidden;
   .classes-type {
@@ -334,7 +334,31 @@ pre{
     padding: 8px;
   }
 }
-
+.teacher-panel {
+  .desc {
+    margin-top: rem(15);
+    font-size: rem(28);
+    line-height:(48/28);
+  }
+}
+.teacher-info__list {
+  background: #fff;
+  border-radius: 5px;
+  padding: 0 rem(20);
+  color: #222222;
+  font-size: rem(30);
+  margin-top: rem(20);
+  .item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: rem(98);
+    border-top: 1px solid #f0f0f0;
+    &:first-child {
+      border-top: 0px;
+    }
+  }
+}
 .icon-label {
   display: inline-block;
   width: rem(24);
@@ -370,4 +394,52 @@ pre{
     }
   }
 
+}
+
+.teacher-info__wrap {
+  min-height: 100%;
+  padding: rem(20);
+  .teacher-panel {
+    margin-top: rem(20);
+    background: #fff;
+    border-radius: 5px;
+    padding: rem(20) rem(46);
+    .title-label {
+      margin: 0 rem(-26);
+    }
+  }
+  .grid__album {
+    margin-top: rem(15);
+  }
+}
+.teacher-info__banner {
+  position: relative;
+  background-image: url("../images/banner_03.png");
+  border-radius: 5px;
+  &:before {
+    padding-top: (300/710)*100%;
+  }
+}
+.teacher-info__avatar {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: rem(195);
+  margin-left: rem(-195/2);
+  margin-top: rem(-195/2);
+  border-radius: 50%;
+  border: rem(8) solid #fff;
+  box-shadow: 0 0 0 3px #f6775d;
+}
+.title-label {
+  font-size: rem(30);
+  color: #222222;
+  .line-red {
+    display: inline-block;
+    width: rem(6);
+    height: rem(32);
+    background: #f6775d;
+    vertical-align: middle;
+    margin-right: rem(20);
+  }
 }

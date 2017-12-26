@@ -71,4 +71,4 @@ gulp.task('browser-sync',['watch'],function(){
 });
 
 
-gulp.task('default',['browser-sync','watch',"scss"]);
+gulp.task('default',['browser-sync','watch',"scss","fileinclude","changed"]);
