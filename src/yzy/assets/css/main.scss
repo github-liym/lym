@@ -1,7 +1,7 @@
 @import "weui.min";
 @import "jquery-weui.min";
 @function rem($px) {
-  @return ($px /20)*(320/750)  * 1rem;
+  @return ($px /22.08)*(414/750)  * 1rem;
 }
 * {
   margin: 0;
@@ -461,7 +461,21 @@ pre{
 .text-222222 {
   color: #222222;
 }
-
+.btn-simple {
+  font-size: 0.59733rem;
+  line-height: 1.92857;
+  -moz-border-radius: 1.152rem;
+  border-radius: 1.152rem;
+  padding: 0 0.64rem;
+  margin: 0;
+  color: #fff;
+  &.btn-green {
+    background: #81d64d;
+  }
+  &.btn-red {
+    background: #f98063;
+  }
+}
 i.icon {
   display: inline-block;
   &:before {
@@ -572,3 +586,109 @@ i.icon {
     flex: 1;
   }
 }
+
+.recipes {
+  height: 100%;
+  .weui-navbar {
+    color: #6e6e6e;
+    background: #fff;
+    .iconfont {
+      margin-right: 5px;
+    }
+    .weui-bar__item--on {
+      position: relative;
+      color: #f98063;
+      background: #fff;
+      &:before {
+        content: '';
+        position: absolute;
+        left: 10%;
+        bottom: 0;
+        width: 80%;
+        height: 1px;
+        background: red;
+      }
+      &:after {
+        display: none;
+      }
+    }
+  }
+  .weui-tab__bd-item {
+    display: flex;
+    flex-direction: column;
+    background: url("../images/recipes-bg.jpg") no-repeat center;
+    background-size: cover;
+    padding: rem(20);
+  }
+  #fileBox {
+    display: none;
+  }
+  .recipes-bottom {
+    display: flex;
+    justify-content: space-between;
+    padding: rem(40) 0 rem(90);
+  }
+  .btn-simple {
+    width: 45%;
+    line-height: rem(70);
+    text-align: center;
+  }
+}
+#recipesImg {
+  .weui-tab__bd-item {
+    display: flex;
+  }
+  .uploader__input-box {
+    display: flex;
+    background: #fff;
+    flex: 1;
+    border-radius: 3px;
+    >.bg {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      border: 2px dashed #f0f0f0;
+      flex: 1;
+      color: #cccccc;
+      font-size: 14px;
+      .iconfont {
+        font-size: 30px;
+      }
+    }
+  }
+}
+.recipes-table {
+  text-align: center;
+  flex: 1;
+  .head {
+    display: flex;
+    .weui-flex__item {
+      flex: 1.56;
+      &:first-child {
+        flex: 1;
+        background: url("../images/recipes-head.png") no-repeat center;
+        background-size: 100% 100%;
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

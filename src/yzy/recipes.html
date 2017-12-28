@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=no">
+	<title>每周食谱</title>
+	<link rel="stylesheet" href="//at.alicdn.com/t/font_525136_ss1n0uvsfxnwxw29.css">
+	<link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+
+<div class="recipes">
+	<div class="weui-tab">
+		<div class="weui-navbar">
+			<a class="weui-navbar__item weui-bar__item--on" href="#recipesTable">
+				<i class="iconfont icon-table"></i>表格
+			</a>
+			<a class="weui-navbar__item" href="#recipesImg">
+				<i class="iconfont icon-img"></i>图片
+			</a>
+		</div>
+		<div class="weui-tab__bd">
+			<div id="recipesTable" class="weui-tab__bd-item weui-tab__bd-item--active">
+				<div class="recipes-table">
+					<div class="head weui-flex">
+						<div class="weui-flex__item">
+							<span>时间</span>
+							<span>餐点</span>
+						</div>
+						<div class="weui-flex__item">早餐</div>
+						<div class="weui-flex__item">午餐</div>
+						<div class="weui-flex__item">点心</div>
+					</div>
+				</div>
+				<div class="recipes-bottom">
+					<a href="javascript:" class="btn-simple btn-green">清空</a>
+					<a href="javascript:" class="btn-simple btn-red">应用</a>
+				</div>
+			</div>
+			<div id="recipesImg" class="weui-tab__bd-item">
+				<input type="file" id="fileBox">
+				<label for="fileBox" class="uploader__input-box">
+					<div class="bg">
+						<i class="iconfont icon-camera"></i>
+						请上传照片
+					</div>
+				</label>
+				<div class="recipes-bottom">
+					<a href="javascript:" class="btn-simple btn-green">清空</a>
+					<a href="javascript:" class="btn-simple btn-red">应用</a>
+				</div>
+
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/jquery-weui.min.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
