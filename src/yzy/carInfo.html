@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=no">
+	<title>车次信息</title>
+	@@include("assets/components/head.html")
+</head>
+<body>
+<div class="carInfo">
+	<div class="cells-simle">
+		<div class="cells-simle__hd">
+			<div class="weui-cell ">
+				<div class="weui-cell__bd">
+					<div class="title-label">
+						<i class="line-red"></i>车次信息
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="cells-simle__bd">
+			<div class="weui-cell weui-cell_select weui-cell_select-after">
+				<div class="weui-cell__hd">
+					车次
+				</div>
+				<div class="weui-cell__bd">
+					<select class="weui-select" name="select2">
+						<option value="1">第一车</option>
+						<option value="2">第二车</option>
+						<option value="3">第三车</option>
+					</select>
+				</div>
+			</div>
+			<div class="weui-cell car-statu">
+				<div class="weui-cell__hd">
+					状态
+				</div>
+				<div class="weui-cell__bd switch-panel">
+					<a href="javascirpt:" class="active btn-full switch-item">入园</a>
+					<a href="javascirpt:" class="btn-full switch-item">离园</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="cells-simle cells-simle__padding">
+		<input type="file" id="uploadPhoto" class="none">
+		<label class="upload-photo" for="uploadPhoto">
+			<i class="iconfont icon-camera"></i>请上传照片
+		</label>
+	</div>
+	<div class="cells-simle">
+		<div class="cells-simle__hd">
+			<div class="weui-cell ">
+				<div class="weui-cell__bd">
+					<div class="title-label">
+						<i class="line-red"></i>未上车学生
+					</div>
+				</div>
+				<div class="weui-cell__ft">
+					<a href="javascript:" class="iconfont icon-add"></a>
+				</div>
+			</div>
+		</div>
+		<div class="cells-simle__bd">
+			<!--正常状态删除 student-list__edit-->
+			<div class="student-list__1 student-list__edit">
+				<div class="item">
+					<div class="cover radius" style="background-image: url(assets/images/temp/avatar2.png)">
+						<i class="iconfont icon-subtraction__full"></i>
+					</div>
+					<div class="caption">
+						<div class="name">张小明</div>
+						<div class="class">中班</div>
+					</div>
+				</div>
+				<div class="item">
+					<div class="cover radius" style="background-image: url(assets/images/temp/avatar2.png)">
+						<i class="iconfont icon-subtraction__full"></i>
+					</div>
+					<div class="caption">
+						<div class="name">张小明</div>
+						<div class="class">中班</div>
+					</div>
+				</div>
+				<div class="item">
+					<div class="cover radius" style="background-image: url(assets/images/temp/avatar2.png)">
+						<i class="iconfont icon-subtraction__full"></i>
+					</div>
+					<div class="caption">
+						<div class="name">张小明</div>
+						<div class="class">中班</div>
+					</div>
+				</div>
+				<div class="item">
+					<div class="cover radius" style="background-image: url(assets/images/temp/avatar2.png)">
+						<i class="iconfont icon-subtraction__full"></i>
+					</div>
+					<div class="caption">
+						<div class="name">张小明</div>
+						<div class="class">中班</div>
+					</div>
+				</div>
+				<div class="item">
+					<div class="cover radius" style="background-image: url(assets/images/temp/avatar2.png)">
+						<i class="iconfont icon-subtraction__full"></i>
+					</div>
+					<div class="caption">
+						<div class="name">张小明</div>
+						<div class="class">中班</div>
+					</div>
+				</div>
+				<div class="item">
+					<div class="cover radius" style="background-image: url(assets/images/temp/avatar2.png)">
+						<i class="iconfont icon-subtraction__full"></i>
+					</div>
+					<div class="caption">
+						<div class="name">张小明</div>
+						<div class="class">中班</div>
+					</div>
+				</div>
+				<div class="item">
+					<div class="cover radius" style="background-image: url(assets/images/temp/avatar2.png)">
+						<i class="iconfont icon-subtraction__full"></i>
+					</div>
+					<div class="caption">
+						<div class="name">张小明</div>
+						<div class="class">中班</div>
+					</div>
+				</div>
+				<div class="item">
+					<div class="cover radius" style="background-image: url(assets/images/temp/avatar2.png)">
+						<i class="iconfont icon-subtraction__full"></i>
+					</div>
+					<div class="caption">
+						<div class="name">张小明</div>
+						<div class="class">中班</div>
+					</div>
+				</div>
+				<div class="item">
+					<div class="cover radius" style="background-image: url(assets/images/temp/avatar2.png)">
+						<i class="iconfont icon-subtraction__full"></i>
+					</div>
+					<div class="caption">
+						<div class="name">张小明</div>
+						<div class="class">中班</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<a href="javascirpt:" class="btn-full btn-red btn-lg">通知家长</a>
+</div>
+
+
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/jquery-weui.min.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

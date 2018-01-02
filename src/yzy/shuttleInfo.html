@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=no">
+	<title>代接人信息</title>
+	@@include("assets/components/head.html")
+</head>
+<body>
+<div class="cells-simle__wrap">
+	<div class="cells-simle">
+		<div class="cells-simle__hd">
+			<div class="weui-cell ">
+				<div class="weui-cell__bd">
+					<div class="title-label">
+						<i class="line-red"></i>学生信息
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="cells-simle__bd">
+			<div class="weui-cell weui-cell_select weui-cell_select-after">
+				<div class="weui-cell__hd">
+					选择班级
+				</div>
+				<div class="weui-cell__bd">
+					<select class="weui-select" name="select2">
+						<option value="1">大班</option>
+						<option value="2">中班</option>
+						<option value="3">小班</option>
+					</select>
+				</div>
+			</div>
+			<div class="weui-cell weui-cell_select weui-cell_select-after">
+				<div class="weui-cell__hd">
+					选择学生
+				</div>
+				<div class="weui-cell__bd">
+					<select class="weui-select" name="select2">
+						<option value="1">学生1</option>
+						<option value="2">学生2</option>
+						<option value="3">学生3</option>
+					</select>
+				</div>
+			</div>
+		</div>
+
+	</div>
+	<div class="cells-simle">
+		<div class="cells-simle__hd">
+			<div class="weui-cell ">
+				<div class="weui-cell__bd">
+					<div class="title-label">
+						<i class="line-red"></i>代接人信息
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="cells-simle__bd">
+			<div class="weui-cell">
+				<div class="weui-cell__hd"><label class="weui-label">qq</label></div>
+				<div class="weui-cell__bd">
+					<input class="weui-input text-right" type="text" placeholder="请填写代接人姓名">
+				</div>
+			</div>
+			<div class="weui-cell">
+				<div class="weui-cell__bd">
+					<input type="file" id="uploadPhoto" class="none">
+					<label class="upload-photo" for="uploadPhoto">
+						<i class="iconfont icon-camera"></i>请上传照片
+					</label>
+				</div>
+			</div>
+		</div>
+
+	</div>
+	<div class="cells-simle__padding">
+		<a href="javascript" class="btn-full btn-red btn-lg">通知家长</a>
+	</div>
+
+</div>
+
+
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/jquery-weui.min.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

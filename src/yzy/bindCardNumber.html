@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=no">
+	<title>卡号绑定</title>
+	@@include("assets/components/head.html")
+</head>
+<body>
+<div class="bind-card cells-simle__wrap">
+	<div class="bind-avatar cells-simle">
+		<div class="cover radius" style="background-image: url(assets/images/temp/avatar2.png)"></div>
+		<i class="iconfont icon-bind"></i>
+		<div class="card-pic cover"></div>
+	</div>
+	<div class="cells-simle">
+		<div class="cells-simle__bd">
+			<div class="weui-cell">
+				<div class="weui-cell__hd">
+					<label class="weui-label">
+						<i class="iconfont icon-card"></i>卡号
+					</label>
+				</div>
+				<div class="weui-cell__bd">
+					<input class="weui-input" type="text" placeholder="请输入卡号">
+				</div>
+			</div>
+			<div class="weui-cell">
+				<div class="weui-cell__hd">
+					<label class="weui-label"><i class="iconfont icon-eye"></i>密码</label>
+				</div>
+				<div class="weui-cell__bd">
+					<input class="weui-input" type="text" placeholder="请输入密码">
+				</div>
+			</div>
+			<div class="weui-cell">
+				<div class="weui-cell__hd">
+					<label class="weui-label"><i class="iconfont icon-user"></i>姓名</label>
+				</div>
+				<div class="weui-cell__bd">
+					<input class="weui-input" type="text" placeholder="请输入姓名">
+				</div>
+			</div>
+		</div>
+
+	</div>
+	<div class="cells-simle__padding">
+		<a href="javascript" class="btn-full btn-red btn-lg">绑定</a>
+	</div>
+	<div class="text-center">
+		<i class="iconfont icon-question"></i>如何绑定
+	</div>
+</div>
+
+
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/jquery-weui.min.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
