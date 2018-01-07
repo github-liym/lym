@@ -2041,3 +2041,43 @@ i.icon.i-agree { background-image: url("../images/icon/i-agree.png"); }
 .bind-card .bind-avatar .card-pic { background-image: url("../images/icon/i-card.png"); }
 
 .text-center { text-align: center; }
+
+.chatList .weui-navbar .iconfont { margin-right: 15px; font-size: 18px; }
+
+.chatList .weui-navbar .weui-navbar__item { padding: 0; height: 50px; display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -moz-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -moz-box-pack: center; -ms-flex-pack: center; justify-content: center; color: #6e6e6e; background: #fff; }
+
+.chatList .weui-navbar .weui-navbar__item:after { display: none; }
+
+.chatList .weui-navbar .weui-bar__item--on { color: #f98063; background: #fff; position: relative; }
+
+.chatList .weui-navbar .weui-bar__item--on:before { content: ''; position: absolute; bottom: 0px; left: 10%; width: 80%; height: 1px; background: #f98063; }
+
+.chatList .weui-cell { display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: flex; }
+
+.chatList .avatar { position: relative; width: 50px; -moz-border-radius: 3px; border-radius: 3px; }
+
+.chatList .avatar .weui-badge { position: absolute; top: -.4em; right: -.4em; }
+
+.chat-list__msg { background: #fff; }
+
+.chat-list__msg .omit { font-size: 13px; color: #6e6e6e; }
+
+.chat-list__msg .weui-cell:before { left: 0; }
+
+.chat-list__msg .weui-cell__bd { display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -moz-box-orient: vertical; -moz-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -ms-flex-item-align: stretch; align-self: stretch; -webkit-box-pack: justify; -moz-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-flex: 1; -moz-box-flex: 1; -ms-flex: 1; flex: 1; width: 100%; min-width: 0; padding: 5px 8px 4px 10px; line-height: 1; }
+
+.chat-list__msg .weui-cell__ft { font-size: 13px; }
+
+.chat-list__linkman { background: #fff; }
+
+.chat-list__linkman .weui-cell__bd { padding: 0 8px 0 10px; min-width: 0; }
+
+.chat-list__linkman .weui-cell__ft { display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: flex; -ms-flex-item-align: center; align-self: center; -webkit-box-pack: justify; -moz-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; width: 110px; padding-right: 10px; }
+
+.chat-list__linkman .i-item { display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -moz-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -moz-box-pack: center; -ms-flex-pack: center; justify-content: center; width: 45px; height: 45px; -moz-background-size: cover; background-size: cover; color: #fff; }
+
+.chat-list__linkman .i-item .iconfont { font-size: 20px; }
+
+.chat-list__linkman .i-green { background-image: url(../images/linkman-green.png); }
+
+.chat-list__linkman .i-blue { background-image: url(../images/linkman-blue.png); }

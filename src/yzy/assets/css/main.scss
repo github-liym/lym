@@ -1001,7 +1001,112 @@ i.icon {
 }
 .text-center {
   text-align: center;
+}
+.chatList {
+  .weui-navbar {
+    .iconfont {
+      margin-right: 15px;
+      font-size: 18px;
+    }
+    .weui-navbar__item {
+      padding: 0;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #6e6e6e;
+      background: #fff;
+      &:after {
+        display: none;
+      }
+    }
+    .weui-bar__item--on {
+      color: #f98063;
+      background: #fff;
+      position: relative;
+      &:before {
+        content: '';
+        position: absolute;
+        bottom: 0px;
+        left: 10%;
+        width: 80%;
+        height: 1px;
+        background: #f98063;
+      }
+    }
+  }
+  .weui-cell {
+    display: flex;
+  }
+  .avatar {
+    position: relative;
+    width: 50px;
+    border-radius: 3px;
+    .weui-badge {
+      position: absolute;
+      top: -.4em;
+      right: -.4em;
+    }
+  }
+}
+.chat-list__msg {
+  background: #fff;
+  .omit {
+    font-size: 13px;
+    color: #6e6e6e;
+  }
+  .weui-cell {
+    &:before {
+      left: 0;
+    }
+  }
+  .weui-cell__bd {
+    display: flex;
+    flex-direction: column;
+    align-self: stretch;
+    justify-content: space-between;
+    flex: 1;
+    width: 100%;
+    min-width: 0;
+    padding: 5px 8px 4px 10px;
+    line-height: 1;
+  }
+  .weui-cell__ft {
+    font-size: 13px;
+  }
+}
 
+.chat-list__linkman {
+  background: #fff;
+  .weui-cell__bd {
+    padding: 0 8px 0 10px;
+    min-width: 0;
+  }
+  .weui-cell__ft {
+    display: flex;
+    align-self: center;
+    justify-content: space-between;
+    width: 110px;
+    padding-right: 10px;
+  }
+  .i-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    background-size: cover;
+    color: #fff;
+    .iconfont {
+      font-size: 20px;
+    }
+  }
+  .i-green {
+    background-image: url(../images/linkman-green.png);
+  }
+  .i-blue {
+    background-image: url(../images/linkman-blue.png);
+  }
 }
 
 
