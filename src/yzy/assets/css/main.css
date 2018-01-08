@@ -2068,11 +2068,7 @@ i.icon.i-agree { background-image: url("../images/icon/i-agree.png"); }
 
 .chat-list__msg .weui-cell__ft { font-size: 13px; }
 
-.chat-list__linkman { background: #fff; }
-
-.chat-list__linkman .weui-cell__bd { padding: 0 8px 0 10px; min-width: 0; }
-
-.chat-list__linkman .weui-cell__ft { display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: flex; -ms-flex-item-align: center; align-self: center; -webkit-box-pack: justify; -moz-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; width: 110px; padding-right: 10px; }
+.chat-list__linkman { background: #f9f9f9; }
 
 .chat-list__linkman .i-item { display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -moz-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -moz-box-pack: center; -ms-flex-pack: center; justify-content: center; width: 45px; height: 45px; -moz-background-size: cover; background-size: cover; color: #fff; }
 
@@ -2081,3 +2077,21 @@ i.icon.i-agree { background-image: url("../images/icon/i-agree.png"); }
 .chat-list__linkman .i-green { background-image: url(../images/linkman-green.png); }
 
 .chat-list__linkman .i-blue { background-image: url(../images/linkman-blue.png); }
+
+.chat-list__linkman .sidebar { position: fixed; right: 0; top: 20%; font-size: 0.5rem; }
+
+.chat-list__linkman .sidebar li { display: block; }
+
+.chat-list__linkman .sidebar a { display: block; line-height: 1.5; width: 30px; text-align: center; }
+
+.linkman-list__wrap h3 { color: #999; padding: 5px 15px; font-weight: normal; font-size: 17px; }
+
+.linkman-list { background: #fff; }
+
+.linkman-list .weui-cell__bd { padding: 0 8px 0 10px; min-width: 0; }
+
+.linkman-list .weui-cell__ft { display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: flex; -ms-flex-item-align: center; align-self: center; -webkit-box-pack: justify; -moz-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; width: 110px; padding-right: 10px; }
+
+.linkman-list .weui-cell:before { left: 75px; }
+
+.select-number .avatar { width: 60px; }
