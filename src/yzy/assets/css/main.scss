@@ -1141,9 +1141,73 @@ i.icon {
   }
 }
 .select-number {
-  .avatar {
-    width: 60px;
+  background: #f6f6f6;
+  .select-tip {
+    line-height: rem(50);
+    padding: rem(15) 15px;
+    font-size: rem(30);
+    color: #f98063;
   }
+  .avatar {
+    width: rem(90);
+    margin-right: rem(15);
+  }
+  .weui-cell {
+    background: #fff;
+  }
+  .weui-cell__bd {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+  }
+  .name {
+    font-size: rem(30);
+    color: #222;
+  }
+  .number {
+    font-size: rem(24);
+    color: #676767;
+  }
+}
+
+.user-tabbar {
+  height: rem(100);
+  .weui-tabbar__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: stretch;
+    padding-top: 0;
+  }
+  .weui-tabbar__icon {
+    width: rem(50);
+    height: rem(50);
+    background: no-repeat center;
+    background-size: cover;
+  }
+  $userTabbar: work dy home dic talk;
+  @each $item in $userTabbar {
+    .i-#{$item} {
+      background-image: url("../images/icon/user-#{$item}.png");
+    }
+    .weui-bar__item--on {
+      .i-#{$item} {
+        background-image: url("../images/icon/user-#{$item}_click.png");
+      }
+    }
+  }
+  .weui-tabbar__label {
+    color: #dcdcdc;
+    font-size: rem(20);
+    line-height: 1.5;
+  }
+  .weui-bar__item--on {
+    .weui-tabbar__label {
+      color: #f76856;
+    }
+  }
+
 }
 
 
