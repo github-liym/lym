@@ -10,12 +10,119 @@
 <div class="weui-tab user-center">
 	<div class="weui-tab__bd">
 		<div id="tab1" class="weui-tab__bd-item weui-tab__bd-item--active">
-			123
+			<div class="user-center__banner swiper-container" data-space-between='10' data-pagination='.swiper-pagination' data-autoplay="1000">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide cover" style="background-image: url(assets/images/services-banner.jpg)"></div>
+					<div class="swiper-slide cover" style="background-image: url(assets/images/services-banner.jpg)"></div>
+					<div class="swiper-slide cover" style="background-image: url(assets/images/services-banner.jpg)"></div>
+					<div class="swiper-slide cover" style="background-image: url(assets/images/services-banner.jpg)"></div>
+				</div>
+				<div class="swiper-pagination"></div>
+				<div class="ranking">
+					<img src="assets/images/icon/i-ranking.png" />
+					<span>本园排名：2</span>
+					<span>平台排名：589</span>
+				</div>
+			</div>
+			<div class="cells-simle">
+				<div class="cells-simle__hd">
+					<div class="weui-cell ">
+						<div class="weui-cell__bd">
+							<div class="title-label">
+								<i class="line-red"></i>增值服务
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="cells-simle__bd">
+					<div class="value-added">
+						<a class="value-added__item" href="javascript:">
+							<div class="cover value-added_1"></div>
+							学习资源
+						</a>
+						<a class="value-added__item" href="javascript:">
+							<div class="cover value-added_2"></div>
+							扫码签到
+						</a>
+						<a class="value-added__item" href="javascript:">
+							<div class="cover value-added_3"></div>
+							宝宝在线
+						</a>
+						<a class="value-added__item" href="javascript:">
+							<div class="cover value-added_4"></div>
+							卡号激活
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="cells-simle">
+				<div class="cells-simle__hd">
+					<div class="weui-cell ">
+						<div class="weui-cell__bd">
+							<div class="title-label">
+								<i class="line-red"></i>基础服务
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="cells-simle__bd">
+					<div class="basic-services">
+						<a class="basic-services__item1 basic-services__item" href="javascript:">
+							<div class="cover"></div>
+						</a>
+						<a class="basic-services__item2 basic-services__item" href="javascript:">
+							<div class="cover"></div>
+						</a>
+						<a class="basic-services__item3 basic-services__item" href="javascript:">
+							<div class="cover"></div>
+						</a>
+						<a class="basic-services__item4 basic-services__item" href="javascript:">
+							<div class="cover"></div>
+						</a>
+						<a class="basic-services__item5 basic-services__item" href="javascript:">
+							<div class="cover"></div>
+						</a>
+						<a class="basic-services__item6 basic-services__item" href="javascript:">
+							<div class="cover"></div>
+						</a>
+						<a class="basic-services__item7 basic-services__item" href="javascript:">
+							<div class="cover"></div>
+						</a>
+						<a class="basic-services__item8 basic-services__item" href="javascript:">
+							<div class="cover"></div>
+						</a>
+						<a class="basic-services__item9 basic-services__item" href="javascript:">
+							<div class="cover"></div>
+						</a>
+						<a class="basic-services__item10 basic-services__item" href="javascript:">
+							<div class="cover"></div>
+						</a>
+						<a class="basic-services__item11 basic-services__item" href="javascript:">
+							<div class="cover"></div>
+						</a>
+						<a class="basic-services__item12 basic-services__item" href="javascript:">
+							<div class="cover"></div>
+						</a>
+						<a class="basic-services__item13 basic-services__item" href="javascript:">
+							<div class="cover"></div>
+						</a>
+						<a class="basic-services__item14 basic-services__item" href="javascript:">
+							<div class="cover"></div>
+						</a>
+						<a class="basic-services__item15 basic-services__item" href="javascript:">
+							<div class="cover"></div>
+						</a>
+						<a class="basic-services__item16 basic-services__item" href="javascript:">
+							<div class="cover"></div>
+						</a>
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
 
 	<div class="user-tabbar weui-tabbar">
-		<a href="javascript:" class="weui-tabbar__item weui-bar__item--on">
+		<a href="javascript:" class="weui-tabbar__item">
 			<div class="weui-tabbar__icon i-work"></div>
 			<p class="weui-tabbar__label">作业</p>
 		</a>
@@ -23,7 +130,7 @@
 			<div class="weui-tabbar__icon i-dy"></div>
 			<p class="weui-tabbar__label">动态</p>
 		</a>
-		<a href="javascript:" class="weui-tabbar__item">
+		<a href="javascript:" class="weui-tabbar__item weui-bar__item--on">
 			<div class="weui-tabbar__icon i-home"></div>
 			<p class="weui-tabbar__label">主页</p>
 		</a>
@@ -41,6 +148,10 @@
 
 <script src="assets/js/jquery.min.js"></script>
 <script src="assets/js/jquery-weui.min.js"></script>
+<script src="https://cdn.bootcss.com/jquery-weui/1.2.0/js/swiper.min.js"></script>
 <script src="assets/js/main.js"></script>
+<script>
+	$(".swiper-container").swiper()
+</script>
 </body>
 </html>
