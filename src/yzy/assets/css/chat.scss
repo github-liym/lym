@@ -1,0 +1,56 @@
+/*聊天界面*/
+$chat-bg: #eeeeee;
+$chat-bar__bg: #fff;
+$main-color: #f6775d;
+.chat {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background: $chat-bg;
+}
+.chat-content {
+  flex: 1;
+  overflow: auto;
+}
+.chat-bar {
+  display: flex;
+  align-items: center;
+  background: $chat-bar__bg;
+  padding: rem(13) rem(15);
+  .icon {
+    margin-right: rem(15);
+  }
+}
+.chat-input__box {
+  display: flex;
+  flex: 1;
+  min-width: 0;
+}
+.chat-input {
+  flex: 1;
+  margin-right: rem(15);
+  padding: 0 rem(10);
+  min-width: 0;
+}
+.chat-btn {
+  width: rem(160);
+  height: rem(72);
+  line-height: rem(72);
+  border-radius: (72/2)+px;
+  font-size: rem(28);
+  text-align: center;
+  color: #fff;
+  background: $main-color;
+  &:hover {
+    color: #fff;
+  }
+}
+.chat-item {
+  .avatar {
+    width: rem(80);
+    border-radius: rem(5);
+  }
+}
+.chat-msg {
+
+}
