@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=no">
+	<title>查询</title>
+	@@include("assets/components/head.html")
+</head>
+<body>
+<div class="inquiry cells-simle__wrap">
+	<div class="cells-simle">
+		<div class="cells-simle__hd">
+			<div class="weui-cell ">
+				<div class="weui-cell__bd">
+					<div class="title-label">
+						<i class="line-red"></i>查询条件
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="cells-simle__bd">
+			<div class="weui-cell">
+				<div class="weui-cell__hd">
+					<label class="weui-label">关键词</label>
+				</div>
+				<div class="weui-cell__bd">
+					<input class="weui-input text-right" type="text" placeholder="请输入班级动态关键词">
+				</div>
+			</div>
+			<div class="weui-cell weui-cell_select weui-cell_select-after">
+				<div class="weui-cell__hd">
+					<label class="weui-label">选择班级</label>
+				</div>
+				<div class="weui-cell__bd">
+					<select class="weui-select" name="select2">
+						<option value="1">大一班</option>
+						<option value="2">大二班</option>
+						<option value="3">大三班</option>
+					</select>
+				</div>
+			</div>
+			<div class="weui-cell weui-cell_select weui-cell_select-after">
+				<div class="weui-cell__hd">
+					<label class="weui-label">选择日期</label>
+				</div>
+				<div class="weui-cell__bd">
+					<input class="dateInput" id="date" type="text" readonly="">
+				</div>
+			</div>
+		</div>
+
+	</div>
+	<div class="cells-simle__padding">
+		<a href="javascript" class="btn-full btn-red btn-lg">查询</a>
+	</div>
+</div>
+
+
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/jquery-weui.min.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
