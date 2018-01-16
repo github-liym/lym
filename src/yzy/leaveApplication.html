@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=no">
+	<title>请假申请</title>
+	@@include("assets/components/head.html")
+</head>
+<body>
+<div class="inquiry cells-simle__wrap">
+	<div class="cells-simle">
+		<div class="cells-simle__bd">
+			<div class="weui-cell">
+				<div class="weui-cell__bd">
+					<textarea class="weui-textarea" placeholder="请输入请假原因" rows="3"></textarea>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="cells-simle">
+		<div class="cells-simle__bd">
+			<div class="weui-cell weui-cell_select weui-cell_select-after">
+				<div class="weui-cell__hd">
+					<label class="weui-label" for="starTime">开始时间</label>
+				</div>
+				<div class="weui-cell__bd">
+					<input class="dateInput" id="starTime" type="text" readonly="">
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="cells-simle">
+		<div class="cells-simle__bd">
+			<div class="weui-cell weui-cell_select weui-cell_select-after">
+				<div class="weui-cell__hd">
+					<label class="weui-label" for="endTime">结束时间</label>
+				</div>
+				<div class="weui-cell__bd">
+					<input class="dateInput" id="endTime" type="text" readonly="">
+				</div>
+			</div>
+		</div>
+
+	</div>
+	<div class="cells-simle__padding">
+		<a href="javascript" class="btn-full btn-red btn-lg">提交</a>
+	</div>
+</div>
+
+
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/jquery-weui.min.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
