@@ -17,3 +17,17 @@
   width: rem(52);
   background-image: url("../images/icon/img.png");
 }
+.i-come {
+  width: rem(106);
+  background-image: url("../images/icon/come.png");
+  &:before {
+	padding-top: (76/106)*100%;
+  }
+}
+.i-leave {
+  width: rem(106);
+  background-image: url("../images/icon/leave.png");
+  &:before {
+	padding-top: (76/106)*100%;
+  }
+}

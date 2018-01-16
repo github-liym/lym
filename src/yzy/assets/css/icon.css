@@ -1,7 +1,0 @@
-.icon { display: inline-block; width: 50px; background: no-repeat center; -moz-background-size: cover; background-size: cover; }
-
-.icon:before { content: ''; display: block; padding-top: 100%; }
-
-.i-voice { width: rem(52); background-image: url("../images/icon/voice.png"); }
-
-.i-img { width: rem(52); background-image: url("../images/icon/img.png"); }

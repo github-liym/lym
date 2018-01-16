@@ -3,47 +3,49 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=no">
-	<title>请假申请</title>
+	<title>校车通知-乘车记录</title>
 	@@include("assets/components/head.html")
 </head>
 <body>
 <div class="inquiry cells-simle__wrap">
 	<div class="cells-simle">
 		<div class="cells-simle__bd">
+			<div class="weui-cell weui-cell_select weui-cell_select-after">
+				<div class="weui-cell__hd">
+					<label class="title-label" for="rideDate">
+						<i class="line-red"></i>乘车日期
+					</label>
+				</div>
+				<div class="weui-cell__bd">
+					<input class="dateInput weui-input" id="rideDate" type="text" readonly="" value="2016-12-12">
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="cells-simle">
+		<div class="cells-simle__bd">
 			<div class="weui-cell">
+				<label class="title-label" for="rideDate">
+					<i class="line-red"></i>乘车日期
+				</label>
+			</div>
+			<div class="weui-cell weui-cell_access">
 				<div class="weui-cell__bd">
-					<textarea class="weui-textarea" placeholder="请输入请假原因" rows="3"></textarea>
+					2017-11-22  18:03:03
+				</div>
+				<div class="weui-cell__ft">
+					<i class="icon i-leave"></i>
+				</div>
+			</div>
+			<div class="weui-cell weui-cell_access">
+				<div class="weui-cell__bd">
+					2017-11-22  18:03:03
+				</div>
+				<div class="weui-cell__ft">
+					<i class="icon i-come"></i>
 				</div>
 			</div>
 		</div>
-	</div>
-	<div class="cells-simle">
-		<div class="cells-simle__bd">
-			<div class="weui-cell weui-cell_select weui-cell_select-after">
-				<div class="weui-cell__hd">
-					<label class="weui-label" for="starTime">开始时间</label>
-				</div>
-				<div class="weui-cell__bd">
-					<input class="dateInput weui-input" id="starTime" type="text" readonly="">
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="cells-simle">
-		<div class="cells-simle__bd">
-			<div class="weui-cell weui-cell_select weui-cell_select-after">
-				<div class="weui-cell__hd">
-					<label class="weui-label" for="endTime">结束时间</label>
-				</div>
-				<div class="weui-cell__bd">
-					<input class="dateInput weui-input" id="endTime" type="text" readonly="">
-				</div>
-			</div>
-		</div>
-
-	</div>
-	<div class="cells-simle__padding">
-		<a href="javascript" class="btn-full btn-red btn-lg">提交</a>
 	</div>
 </div>
 
