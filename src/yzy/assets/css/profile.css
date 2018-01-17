@@ -1,3 +1,17 @@
-.profile .avatar-bg { padding: rem(100) 0; background: url("../images/profile.jpg") center; -moz-background-size: auto 100%; background-size: auto 100%; }
+.profile .avatar-bg { padding: rem(60) 0 rem(100); background: url("../images/profile.jpg") center; -moz-background-size: auto 100%; background-size: auto 100%; text-align: center; }
 
-.profile .avatar-bg .cover { display: block; width: rem(140); -moz-border-radius: 50%; border-radius: 50%; margin: 0 auto; -webkit-box-shadow: 0px 0px 0px rem(11) #f6b991, 0px 0px 0px rem(22) rgba(246, 185, 145, 0.5), 0px 0px 0px rem(33) rgba(246, 185, 145, 0.2); -moz-box-shadow: 0px 0px 0px rem(11) #f6b991, 0px 0px 0px rem(22) rgba(246, 185, 145, 0.5), 0px 0px 0px rem(33) rgba(246, 185, 145, 0.2); box-shadow: 0px 0px 0px rem(11) #f6b991, 0px 0px 0px rem(22) rgba(246, 185, 145, 0.5), 0px 0px 0px rem(33) rgba(246, 185, 145, 0.2); }
+.profile .avatar-bg .cover { display: block; width: rem(140); -moz-border-radius: 50%; border-radius: 50%; margin: 0 auto rem(20); -webkit-box-shadow: 0px 0px 0px rem(11) #f6b991, 0px 0px 0px rem(22) rgba(246, 185, 145, 0.5), 0px 0px 0px rem(33) rgba(246, 185, 145, 0.2); -moz-box-shadow: 0px 0px 0px rem(11) #f6b991, 0px 0px 0px rem(22) rgba(246, 185, 145, 0.5), 0px 0px 0px rem(33) rgba(246, 185, 145, 0.2); box-shadow: 0px 0px 0px rem(11) #f6b991, 0px 0px 0px rem(22) rgba(246, 185, 145, 0.5), 0px 0px 0px rem(33) rgba(246, 185, 145, 0.2); }
+
+.profile .avatar-text { font-size: rem(20); color: #fff; }
+
+.profile .avatar-text .iconfont { font-size: rem(20); }
+
+.profile .i-profile__icon { width: rem(60); }
+
+.cell-full { background: #fff; padding: 0 rem(30); margin-bottom: rem(20); font-size: rem(30); -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); -moz-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); }
+
+.cell-full .weui-cell { padding: rem(26) 0; }
+
+.cell-full .weui-cell:before { left: 0; border-top: 1px solid #dcdcdc; }
+
+.cell-full .weui-cell__ft { color: #6e6e6e; }
