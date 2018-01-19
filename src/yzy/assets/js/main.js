@@ -39,7 +39,7 @@ var rating = (function () {
 	// 默认值
 	Rating.DEFAULTS = {
 		total: 5, // 星星总数
-		num: 4, //默认点亮
+		num: 0, //默认点亮
 		readOnly: false, //是否只读
 		text: true,// 是否文字描述
 		select: function () {}, // 鼠标经过触发
@@ -132,7 +132,146 @@ var rating = (function () {
 	};
 })();
 
+var calendar = (function () {
+	var Calendar = function (el,options) {
+		this.$el = $(el);
+		console.log(el)
+		this.opts = $.extend({}, Calendar.DEFAULTS,options);
+	};
+	Calendar.DEFAULTS = {
+		template: '<a>ddd</a>'
+	};
+	Calendar.prototype = {
+		/*初始化*/
+		init: function () {
+			this.buildHTML();
+			// this.maxDayOfDate();
+			// console.log(this.dateOfWeek('2018,1'));
+		},
+		/*创建html*/
+		buildHTML: function () {
+			var html = '';
+			var dateHd = '<div class="calendar-hd"> <a href="javascript:" class="calendar-arrow"> <i class="iconfont icon-angle__left"></i> </a> <a href="javascript:" class="calendar-month"> 12月 </a> <a href="javascript:" class="calendar-arrow"> <i class="iconfont icon-angle__right"></i> </a> </div>';
+			var dataBd = '';
+			var myDate = new Date("2018/02/19");
+			var year = myDate.getFullYear();
+			var month = myDate.getMonth()+1;
+			console.log(month)
+			dataBd += '<div class="calendar-bd">' +
+				'<ul class="calendar-week clearfix"> <li>周日</li> <li>周一</li> <li>周二</li> <li>周三</li> <li>周四</li> <li>周五</li> <li>周六</li> </ul>' +
+				'<ul class="calendar-date clearfix">';
+
+			console.log(this.dateOfWeek(year+'/'+(month)));
+			/*上个月*/
+			for (var i=1;i<=this.dateOfWeek(year+'/'+(month))-1;i++) {
+				dataBd+= '<li>' +
+						'<a href="javascript:" class="date-item">' +
+							'<span class="icon i-star on"></span>' +
+							'<span class="text">'+i+'</span>' +
+						'</a>' +
+					'</li>'
+			}
+			/*本月*/
+			for (var i=1;i<=this.maxDayOfDate(year,month);i++) {
+				dataBd+= '<li>' +
+						'<a href="javascript:" class="date-item">' +
+							'<span class="icon i-star on"></span>' +
+							'<span class="text">'+i+'</span>' +
+						'</a>' +
+					'</li>'
+			}
+			dataBd += '</ul></div>';
+			html += dateHd;
+			html += dataBd;
+			this.$el.html(html);
+		},
+		/*判断日期是星期几*/
+		dateOfWeek: function (data) {
+			return new Date(data).getDay()
+		},
+		/*取日期所在月的最大天数*/
+		maxDayOfDate: function (year,month) {
+			var initDate = new Date(year,month,0);
+			return initDate.getDate()
+		},
+		/*把日期分割成数组*/
+		toArray: function (data) {
+			var myArray = Array();
+			myArray[0] = data.getFullYear();
+			myArray[1] = data.getMonth();
+			myArray[2] = data.getDate();
+			myArray[3] = data.getHours();
+			myArray[4] = data.getMinutes();
+			myArray[5] = data.getSeconds();
+			return myArray;
+		},
+		/*日期计算*/
+		DateAdd: function () {
+
+		},
+		/*判断闰年 */
+		isLeapYear: function () {
+
+		},
+		/*日期格式化*/
+		Format: function () {
+
+		},
+		/*比较日期差*/
+		DateDiff: function () {
+
+		},
+		/*日期转字符串*/
+		toString: function () {
+
+		},
+		/*取日期的部分信息*/
+		DatePart: function () {
+
+		},
+		/*判断日期所在年的第几周*/
+		WeekNumOfYear: function () {
+
+		},
+		/*字符串转日期型  */
+		StringToDate: function () {
+
+		},
+		/*验证日期有效性*/
+		IsValidDate: function () {
+
+		},
+		/*完整日期时间检查*/
+		CheckDateTime: function () {
+
+		},
+		/*日期天数差*/
+		daysBetween: function () {
+
+		}
+	};
+	var init = function (el,option) {
+		var $el = $(el);
+		$el.each(function () {
+			var calendar = $(this).data('calendar');
+			if(!calendar){
+				$(this).data('calendar', (calendar = new Calendar(this, typeof option === 'object' && option)));
+				calendar.init();
+			}
+			if (typeof option === 'string') calendar[option]();
+			// console.log($(this).data('rating'));
+		});
+
+	};
+	return {
+		init: init
+	}
+})();
+
 $(function(){
+	calendar.init('.calendar',{
+
+	});
 	// =====星级评分 start=====
 	/*rating.init('.rating',{
 	 total: 6,
@@ -145,6 +284,7 @@ $(function(){
 	 }
 	 });*/
 	$(".rating").rating({
+		text: false,
 		select: function (count, total) {
 
 		},

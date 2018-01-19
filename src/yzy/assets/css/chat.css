@@ -42,4 +42,4 @@
 
 .chat-time { text-align: center; color: #fff; font-size: rem(20); margin: 0 auto rem(30); line-height: 2; }
 
-.chat-time span { display: inline-block; background: #d2d2d2; padding: 0 rem(15); -moz-border-radius: rem(5); border-radius: rem(5); }
+.chat-time .text { display: inline-block; background: #d2d2d2; padding: 0 rem(15); -moz-border-radius: rem(5); border-radius: rem(5); }

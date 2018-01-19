@@ -43,3 +43,24 @@
 .i-profile__unbind {
   background-image: url("../images/icon/i-profile__unbind.png");
 }
+
+.i-home {
+  width: rem(40);
+  background-image: url("../images/icon/home.png");
+  &:before {
+    padding-top: (25/40)*100%;
+  }
+}
+.i-school {
+  width: rem(32);
+  background-image: url("../images/icon/school.png");
+}
+
+.i-star {
+  background: url("../images/icon/star.png") center no-repeat;
+  background-position: 0 100%;
+  background-size: 100% auto;
+  &.on {
+    background-position: 0 0%;
+  }
+}

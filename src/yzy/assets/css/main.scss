@@ -482,7 +482,7 @@ pre{
     background: #f98063;
   }
 }
-i.icon {
+.icon {
   display: inline-block;
   &:before {
     content: '';
@@ -1310,6 +1310,7 @@ i.icon {
 @import "chat.scss";
 @import "inquiry.scss";
 @import "profile.scss";
+@import "growth.scss";
 
 
 

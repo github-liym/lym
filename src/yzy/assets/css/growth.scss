@@ -1,0 +1,204 @@
+.growth {
+  min-height: 100%;
+  padding: 0 rem(20);
+  background: url("../images/growth-bg.png") center;
+  background-attachment: fixed;
+  background-size: auto 100%;
+}
+/*日历*/
+.calendar {
+  background: #fff;
+  padding-bottom: rem(20);
+  .calendar-hd {
+    display: flex;
+    align-items: stretch;
+    height: rem(90);
+  }
+  .calendar-month {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    font-size: rem(36);
+    color: #222222;
+  }
+  .calendar-arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: rem(90);
+    .iconfont {
+      font-size: rem(34);
+      font-weight: bold;
+      color: #7f7f7f;
+    }
+  }
+  .calendar-bd {
+
+  }
+  .calendar-week {
+    margin-bottom: 3px;
+    li {
+      float: left;
+      width: (1/7)*100%;
+      text-align: center;
+      font-size: rem(20);
+      color: #6e6e6e;
+    }
+  }
+  .calendar-date {
+    font-size: rem(34);
+    color: #222;
+    .is-disabled {
+      color: #a6a6a6;
+    }
+    .active {
+      .text {
+        background: #f98063;
+        color: #fff;
+      }
+    }
+    li {
+      float: left;
+      width: (1/7)*100%;
+    }
+    .date-item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto;
+      position: relative;
+      width: 100%;
+      text-align: center;
+      height: rem(90);
+      max-width: rem(90);
+      .i-star {
+        position: absolute;
+        z-index: 2;
+        right: rem(-10);
+        top: 0;
+        width: rem(46);
+      }
+    }
+    .text {
+      width: rem(60);
+      height: rem(60);
+      border-radius: 2px;
+    }
+  }
+}
+/*创建成长档案*/
+.growth-create {
+  min-height: 100%;
+  background: url("../images/growth-bg2.jpg") center;
+  background-attachment: fixed;
+  background-size: auto 100%;
+  padding: rem(20);
+  font-size: rem(28);
+  .growth-ft {
+    padding: 0 rem(20);
+    margin-bottom: rem(20);
+  }
+}
+.growth-inner {
+  background: rgba(#fff,0.75);
+  padding: rem(20);
+  border-radius: rem(5);
+}
+.growth-arrow {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  width: rem(20);
+  background: url("../images/icon/growth-arrow.png");
+  background-size: 100% 100%;
+  &:before {
+    content: '';
+    display: block;
+    padding-top: (59/20)*100%;
+  }
+}
+.growth-title {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: rem(210);
+  height: rem(60);
+  margin: 0 auto rem(25);
+  background: #f47960;
+  font-size: rem(30);
+  color: #fff;
+  .icon {
+    margin-right: rem(25);
+  }
+}
+
+.growth-tb {
+  border: 1px solid #dcdcdc;
+  border-radius: 5px;
+  margin-bottom: rem(40);
+  background: #fff;
+}
+.growth-tb__item {
+  display: flex;
+  height: rem(90);
+  border-top: 1px solid #dcdcdc;
+  &:first-child {
+    border-top: none;
+  }
+  .growth-tb__hd {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: rem(300);
+  }
+  .growth-tb__bd {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-left: 1px solid #dcdcdc;
+  }
+}
+
+.growth-tb__text {
+  flex-direction: column;
+  height: auto;
+  padding: 0 rem(25) rem(30);
+  .growth-tb__hd {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: rem(80);
+  }
+  .growth-tb__bd {
+    flex: auto;
+    border: none;
+  }
+  .btn-line {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: rem(56);
+    padding: 0 rem(25);
+    font-size: rem(24);
+    color: #f98063;
+    border-radius: rem(28);
+    border: 1px solid #f98063;
+  }
+  .growth-tb__textarea {
+    display: block;
+    border: none;
+    background: transparent;
+    font-size: rem(24);
+    height: rem(150);
+  }
+}
+
+.growth-template {
+  background: #fff;
+  height: 50%;
+  padding: 0 rem(20);
+}
