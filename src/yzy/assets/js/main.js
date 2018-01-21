@@ -293,6 +293,12 @@ $(function(){
 		}
 	});
 	// =====星级评分 end=====
+
+	$("#inline-calendar").calendar({
+		container: "#inline-calendar",
+		input: "#date3"
+	});
+
 	// active 切换
 	$(".switch-panel").on("click",".switch-item",function () {
 		$(this).addClass("active").siblings(".switch-item").removeClass("active");

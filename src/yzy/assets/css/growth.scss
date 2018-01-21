@@ -5,6 +5,55 @@
   background-attachment: fixed;
   background-size: auto 100%;
 }
+.growth-template__wrap {
+  height: 100%;
+  padding: rem(20) rem(20);
+  background: url("../images/growth-bg.png") center;
+  //background-attachment: fixed;
+  background-size: auto 100%;
+  overflow: hidden;
+  .title-label {
+    display: block;
+    margin-bottom: rem(20);
+    line-height: rem(90);
+  }
+}
+.template-item {
+  position: relative;
+  line-height: (40/24);
+  font-size: rem(24);
+  color: #222;
+  text-align: justify;
+  border: 2px solid #dcdcdc;
+  border-radius: 5px;
+  padding: rem(20) rem(25);
+  margin-bottom: rem(20);
+  overflow: hidden;
+  &.last {
+    padding-right: rem(65);
+    &:before {
+      position: absolute;
+      right: 0;
+      top: 0;
+      content: '上次记录';
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: rem(40);
+      height: 100%;
+      padding: 0 rem(10);
+      background: #dcdcdc;
+      color: #6e6e6e;
+      font-size: rem(20);
+      box-sizing: border-box;
+    }
+  }
+  &.on {
+    border: 2px solid #f98063;
+    box-shadow: 0px 0px 5px 0px rgba(#f98063,.3);
+  }
+}
+
 /*日历*/
 .calendar {
   background: #fff;
@@ -199,6 +248,22 @@
 
 .growth-template {
   background: #fff;
-  height: 50%;
-  padding: 0 rem(20);
+  height: 100%;
+  padding: 0 rem(20) 1px;
+  margin-bottom: rem(20);
+  border-radius: 5px;
+  overflow-y: auto;
+}
+.growth-tops {
+  font-size: rem(24);
+  //font-weight: bold;
+  border: 2px dashed #f98063 ;
+  color: #f98063;
+  padding: rem(20) rem(40);
+  margin-top: rem(40);
+  line-height: (60/24);
+  .icon {
+    width: rem(40);
+    vertical-align: middle;
+  }
 }
