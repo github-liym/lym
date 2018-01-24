@@ -1,4 +1,4 @@
-.profile .avatar-bg { padding: rem(60) 0 rem(100); background: url("../images/profile.jpg") center; -moz-background-size: auto 100%; background-size: auto 100%; text-align: center; }
+.profile .avatar-bg { position: relative; padding: rem(60) 0 rem(100); background: url("../images/profile.jpg") center; -moz-background-size: auto 100%; background-size: auto 100%; text-align: center; }
 
 .profile .avatar-bg .cover { display: block; width: rem(140); -moz-border-radius: 50%; border-radius: 50%; margin: 0 auto rem(20); -webkit-box-shadow: 0px 0px 0px rem(11) #f6b991, 0px 0px 0px rem(22) rgba(246, 185, 145, 0.5), 0px 0px 0px rem(33) rgba(246, 185, 145, 0.2); -moz-box-shadow: 0px 0px 0px rem(11) #f6b991, 0px 0px 0px rem(22) rgba(246, 185, 145, 0.5), 0px 0px 0px rem(33) rgba(246, 185, 145, 0.2); box-shadow: 0px 0px 0px rem(11) #f6b991, 0px 0px 0px rem(22) rgba(246, 185, 145, 0.5), 0px 0px 0px rem(33) rgba(246, 185, 145, 0.2); }
 
@@ -7,6 +7,14 @@
 .profile .avatar-text .iconfont { font-size: rem(20); }
 
 .profile .i-profile__icon { width: rem(60); }
+
+.profile .operating-bar__wrap { position: relative; height: rem(80); }
+
+.profile .operating-bar { position: absolute; top: rem(-68); width: 100%; display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -moz-box-align: center; -ms-flex-align: center; align-items: center; -ms-flex-pack: distribute; justify-content: space-around; color: #f37b5f; font-size: rem(24); }
+
+.profile .operating-bar img { display: block; width: rem(60); }
+
+.profile .operating-bar__item { display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -moz-box-orient: vertical; -moz-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -moz-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -moz-box-pack: center; -ms-flex-pack: center; justify-content: center; width: rem(136); height: rem(136); background: #fff; -moz-border-radius: 5px; border-radius: 5px; }
 
 .cell-full { background: #fff; padding: 0 rem(30); margin-bottom: rem(20); font-size: rem(30); -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); -moz-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); }
 
