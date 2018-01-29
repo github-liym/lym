@@ -64,3 +64,21 @@
     background-position: 0 0%;
   }
 }
+.i-search {
+  width: rem(42);
+  background-image: url("../images/icon/search.png");
+  &:before {
+    padding-top: (40/42)*100%;
+  }
+}
+.i-write {
+  width: rem(40);
+  background-image: url("../images/icon/write.png");
+}
+.i-deer {
+  width: rem(40);
+  background-image: url("../images/icon/deer.png");
+  &:before {
+    padding-top: (548/371)*100%;
+  }
+}

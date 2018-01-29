@@ -265,14 +265,37 @@ pre{
     }
   }
 }
-
+.btn-edit__fixed-wrap {
+  position: fixed;
+  right: 0;
+  bottom: 20%;
+  .btn-edit__fixed {
+    position: relative;
+    right: auto;
+    bottom: auto;
+    margin-bottom: rem(100);
+  }
+}
 .btn-edit__fixed {
   position: fixed;
   right: 0;
   bottom: 20%;
-  display: block;
-  width: rem(94);
-  background-image: url("../images/work-add.png");
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: rem(70);
+  padding: rem(10) 0;
+  border-top-left-radius: rem(35);
+  border-bottom-left-radius: rem(35);
+  box-shadow: 1px 3px 5px 0 rgba(#000,.25);
+  background: #F6775D;
+  a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: rem(70);
+    height: rem(70);
+  }
   &:before {
     padding-top: (106/94)*100%;
   }
@@ -1170,6 +1193,7 @@ pre{
     color: #676767;
   }
 }
+
 .user-center {
   .weui-tab__bd {
     padding-bottom: rem(100);
@@ -1180,6 +1204,8 @@ pre{
     padding: 5px 0 10px;
   }
 }
+
+$value-added: #6db1dc #96cca4 #f4b1cf #fa9576;
 .value-added__item {
   display: flex;
   flex-direction: column;
@@ -1192,18 +1218,24 @@ pre{
   }
   @for $i from 1 through 4 {
     .value-added_#{$i}{
-      background-image: url("../../assets/images/value-added_#{$i}.png");
+      background-image: url("../images/value-added_#{$i}.png");
     }
   }
-  $value-added: #6db1dc #96cca4 #f4b1cf #fa9576;
   @each $item in $value-added {
     &:nth-child(#{index($value-added,$item)}){
-      color: $item;
+      color:  #{$item};
     }
   }
 
 
 }
+.text-6db1dc { color: #6db1dc; }
+
+.text-green { color: #74daab; }
+
+.text-f4b1cf { color: #f4b1cf; }
+
+.text-fa9576 { color: #fa9576; }
 .basic-services {
   display: flex;
   flex-wrap: wrap;
@@ -1213,6 +1245,7 @@ pre{
   }
 }
 .basic-services__item {
+  position: relative;
   display: block;
   padding: 0 rem(8);
   margin-bottom: rem(15);
@@ -1223,10 +1256,16 @@ pre{
   @for $i from 1 through 16 {
     &.basic-services__item#{$i}{
       .cover {
-        background-image: url("../../assets/images/basic-services_#{$i}.png");
+        background-image: url("../images/basic-services_#{$i}.png");
       }
 
     }
+  }
+  .basic-services__text {
+    position: absolute;
+    bottom: rem(15);
+    right: rem(30);
+    font-size: rem(28);
   }
 }
 .user-center__banner {
