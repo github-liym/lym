@@ -33,7 +33,8 @@ gulp.task('watch',function () {
     gulp.watch(['src/**/*.scss'],['scss']);
 });
 gulp.task('changed', function() {
-	return gulp.src(['src/**/assets/**/*','!src/**/assets/**/*.css','!src/**/assets/**/*.scss','!src/assets/**/*'])
+	// return gulp.src(['src/**/assets/**/*','!src/**/assets/**/*.css','!src/**/assets/**/*.scss','!src/assets/**/*'])
+	return gulp.src(['src/**/*','!src/**/assets/**/*.css','!src/**/assets/**/*.scss'])
 		.pipe(plumber())
 		.pipe(changed('dist'))
 		.pipe(gulp.dest('dist'));
@@ -58,7 +59,7 @@ gulp.task('fileinclude', function() {
 
 gulp.task('watch',function () {
 	gulp.watch(['src/**/*.scss'],['scss']);
-	gulp.watch(['src/**/assets/**/*','!src/**/assets/**/*.css','!src/**/assets/**/*.scss'],['changed']);
+	gulp.watch(['src/**/*','!src/**/assets/**/*.css','!src/**/assets/**/*.scss'],['changed']);
 	gulp.watch(['src/**/*.html'],['fileinclude']);
 });
 

@@ -1,0 +1,31 @@
+* { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+
+body, html { padding: 0; margin: 0; height: 100%; overflow: hidden; }
+
+.main-bg { height: 100%; background: rosybrown center; background: url("../images/main-bg.jpg") top; -moz-background-size: 100% auto; background-size: 100% auto; overflow: hidden; }
+
+.main-box-wrap { margin-top: 73%; margin-left: 30.5%; width: 38.51852%; background: url("../images/bggg.png") center no-repeat; -moz-background-size: 100% auto; background-size: 100% auto; background: transparent; overflow: hidden; padding: 1.08796% 0; }
+
+.main-box { position: relative; overflow: hidden; }
+
+.main-box:before { content: ''; display: block; width: 100%; padding-top: 34.13462%; }
+
+.num { position: absolute; bottom: -500%; width: 16.82692%; background: url("../images/number.png") top; -moz-background-size: 100% auto; background-size: 100% auto; }
+
+.num:before { content: ''; display: block; width: 100%; padding-top: 40571.42857%; }
+
+#num3 { right: 3%; }
+
+#num3.moving { -webkit-transition: bottom 3.2s linear; -moz-transition: bottom 3.2s linear; transition: bottom 3.2s linear; }
+
+#num2 { left: 40.38462%; }
+
+#num2.moving { -webkit-transition: bottom 4.1s linear; -moz-transition: bottom 4.1s linear; transition: bottom 4.1s linear; }
+
+#num1 { left: 2%; }
+
+#num1.moving { -webkit-transition: bottom 5s linear; -moz-transition: bottom 5s linear; transition: bottom 5s linear; }
+
+#touch { display: block; width: 35.37037%; margin: 27.5% auto; }
+
+#touch:before { content: ''; display: block; padding-top: 25.65445%; }

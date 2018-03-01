@@ -1,0 +1,79 @@
+* {
+  box-sizing: border-box;
+}
+body,html {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+}
+.main-bg {
+  height: 100%;
+  background: rosybrown center;
+  background: url("../images/main-bg.jpg") top;
+  background-size: 100% auto;
+  overflow: hidden;
+}
+.main-box-wrap {
+  margin-top: 73%;
+  margin-left: 30.5%;
+  width: (416/1080)*100%;
+  background: url("../images/bggg.png") center no-repeat;
+  background-size: 100% auto;
+  background: transparent;
+  overflow: hidden;
+  padding: (11.75/1080)*100% 0;
+}
+.main-box {
+  position: relative;
+  overflow: hidden;
+  &:before {
+    content: '';
+    display: block;
+    width: 100%;
+    padding-top: (142/416)*100%;
+  }
+}
+.num {
+  position: absolute;
+  bottom: -500%;
+  width: (70/416)*100%;
+  background: url("../images/number.png") top;
+  background-size: 100% auto;
+  &:before {
+    content: '';
+    display: block;
+    width: 100%;
+    padding-top: (1420*20/70)*100%;
+  }
+}
+
+#num3 {
+  right: 3%;
+  &.moving {
+    transition: bottom 3.2s linear;
+  }
+}
+#num2 {
+  left: (168/416)*100%;
+  &.moving {
+    transition: bottom 4.1s linear;
+  }
+}
+
+#num1 {
+  left: 2%;
+  &.moving {
+    transition: bottom 5s linear;
+  }
+}
+#touch {
+  display: block;
+  width: (382/1080)*100%;
+  margin: 27.5% auto;
+  &:before {
+    content: '';
+    display: block;
+    padding-top: (98/382)*100%;
+  }
+}
