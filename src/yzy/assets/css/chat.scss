@@ -3,37 +3,49 @@ $chat-bg: #eeeeee;
 $chat-bar__bg: #fff;
 $main-color: #f6775d;
 .chat {
-  display: flex;
-  flex-direction: column;
+  position: relative;
   height: 100%;
   background: $chat-bg;
+  padding-bottom: rem(100);
+  overflow: hidden;
 }
 .chat-content {
-  flex: 1;
+  height: 100%;
   overflow: auto;
   padding: rem(20);
 }
 .chat-bar {
+  position: fixed;
+  bottom: 0;
+  z-index:2;
+  width: 100%;
   display: flex;
   align-items: center;
   background: $chat-bar__bg;
-  padding: rem(13) rem(15);
+  padding: rem(15) rem(15);
   .icon {
+    display: block;
     margin-right: rem(15);
   }
 }
 .chat-input__box {
-  display: flex;
+  position: relative;
+  padding-right: rem(180);
   flex: 1;
-  min-width: 0;
 }
 .chat-input {
-  flex: 1;
+  width: 100%;
   margin-right: rem(15);
   padding: 0 rem(10);
   min-width: 0;
+  height: rem(70);
+  border-radius: 0;
 }
 .chat-btn {
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: block;
   width: rem(160);
   height: rem(72);
   line-height: rem(72);
@@ -122,6 +134,12 @@ $main-color: #f6775d;
   margin: 0 auto rem(30);
   line-height: 2;
   .text {
+    display: inline-block;
+    background: #d2d2d2;
+    padding: 0 rem(15);
+    border-radius: rem(5);
+  }
+  >span {
     display: inline-block;
     background: #d2d2d2;
     padding: 0 rem(15);

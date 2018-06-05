@@ -89,7 +89,7 @@ var rating = (function () {
 				self.$el.trigger('select',[count,self.opts.total]);
 
 
-			}).on('click','.rating-item',function () {
+			}).on('touchend','.rating-item',function () {
 				var count = $(this).index()+1;
 				self.displayWidth = count * self.itemWidth;
 				self.opts.num = count;
@@ -274,4 +274,17 @@ $(function(){
 	$(".dateInput").calendar({
 		dateFormat: 'yyyy-mm-dd'
 	});
+
+
+	// 播放视频
+	$(".videoBox").on("click",function () {
+		var videoUrl = $(this).data("video");
+		$("body").prepend('<video id="videoPreview" src="'+videoUrl+'" x5-video-player-type="h5" x5-video-orientation="portrait" x5-video-player-fullscreen="true" onpause="videoClose()"></video>');
+		var docElm=document.getElementById("videoPreview");
+		docElm.play();
+	});
+	// 播放视频
 });
+function videoClose() {
+	$("#videoPreview").remove();
+};

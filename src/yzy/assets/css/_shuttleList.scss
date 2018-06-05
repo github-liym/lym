@@ -1,0 +1,19 @@
+.shuttleList {
+  .weui-cell {
+	padding: rem(0) rem(280) rem(0) rem(135) ;
+	margin-bottom: rem(20);
+  }
+  .avatar {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: rem(120);
+  }
+  .weui-cell__ft {
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: rem(260);
+	height: 100%;
+  }
+}

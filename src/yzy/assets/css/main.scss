@@ -121,15 +121,11 @@ pre{
   }
 }
 .teacher-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-
+  @extend .clearfix;
+  text-align: justify;
   .item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    display: inline-block;
+    text-align: center;
     background: url("../images/bg-yellow.png") no-repeat center;
     background-size: 100% 100%;
     width: 48.6%;
@@ -138,6 +134,7 @@ pre{
     margin-top: rem(20);
   }
   .teacher-avatar {
+    margin: rem(15) auto 0;
     box-shadow: 0px 3px 5px #fcbe8f;
   }
 }
@@ -531,40 +528,50 @@ pre{
   .item-wrap {
     background: #fff;
     margin-bottom: rem(20);
-    padding: rem(10) rem(30);
+    padding: rem(20) rem(30) rem(10);
   }
   .statu {
-    display: flex;
-    flex: 1;
-    align-items: flex-start;
-    justify-content: space-between;
-    flex-direction: row-reverse;
+    font-size: 0;
+    text-align: right;
     .weui-btn {
+      display: inline-block;
       margin: 0 ;
+      font-size: rem(28);
+      margin-left: rem(25);
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+    >.icon {
+      transform-origin: 100% 0;
     }
   }
   .avatar {
+    position: absolute;
+    left: 0;
     width: rem(120);
-    margin-right: rem(15);
   }
   .message {
     font-size: rem(24);
     border-top: 1px solid #dcdcdc;
     line-height: 2;
     color: #6a6a6a;
-    padding: rem(10) 0;
+    padding: rem(10) 0 rem(0);
   }
   .time {
+    position: absolute;
+    bottom: 0;
+    right: 0;
     font-size: rem(20);
     color: #6e6e6e;
     line-height: 1;
   }
   .weui-cell__ft {
-    display: flex;
-    align-self: stretch;
-    flex-direction: column;
-    width: rem(250);
-    margin-left: rem(15);
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: rem(260);
+    height: 100%;
   }
   .weui-btn {
     font-size: rem(28);
@@ -586,8 +593,12 @@ pre{
     font-size: rem(28);
   }
   .weui-cell {
-    align-items: flex-start;
-    padding: rem(20) 0 ;
+    align-items: center;
+    padding: rem(0) rem(0) rem(0) rem(135) ;
+    margin-bottom: rem(20);
+  }
+  .weui-cell__bd {
+    min-height: rem(120);
   }
 }
 .leaveList {
@@ -595,13 +606,19 @@ pre{
     line-height: 1;
   }
   .time {
+    position: absolute;
     display: flex;
-    justify-content: space-between;
+    width: 100%;
+    justify-content:space-between;
+    >span {
+      display: block;
+    }
   }
   .weui-cell__bd {
+    position: relative;
+
     display: flex;
     flex-direction: column;
-    align-self: stretch;
     justify-content: space-between;
   }
   .text-616896 {
@@ -618,6 +635,9 @@ pre{
 
 .recipes {
   height: 100%;
+  .weui-tab {
+
+  }
   .weui-navbar {
     color: #6e6e6e;
     background: #fff;
@@ -642,35 +662,153 @@ pre{
       }
     }
   }
-  .weui-tab__bd .weui-tab__bd-item.weui-tab__bd-item--active {
-    display: flex;
-    flex-direction: column;
-    background: url("../images/recipes-bg.jpg") no-repeat center;
+  .weui-navbar__item {
+    &:after {
+      display: none;
+    }
+  }
+  .weui-tab__bd {
+   /* background: url("../images/recipes-bg.jpg") no-repeat center;
     background-size: cover;
-    padding: rem(20);
+    background-attachment: fixed;*/
+    //padding: 50px rem(20) rem(20) rem(20);
+  }
+  .weui-tab__bd-item {
+    //position: relative;
+    //padding-top: rem(20);
+    //padding-bottom: rem(210);
+    //overflow: auto;
+  }
+  .recipes-bottom {
+    position: absolute;
+    left: 0;
+    bottom: rem(100);
+    width: 100%;
+    height: rem(90);
+    padding: 0 rem(20);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .btn-simple {
+      display: block;
+    }
   }
   #fileBox {
     display: none;
   }
-  .recipes-bottom {
-    display: flex;
-    justify-content: space-between;
-    padding: rem(30) 0 rem(60);
-  }
   .btn-simple {
+    display: inline-block;
     width: 45%;
     line-height: rem(70);
     text-align: center;
   }
 }
+.recipes-tab {
+  position: relative;
+  min-height: 100%;
+  padding: rem(20) rem(20) rem(230);
+  font-size: rem(28);
+  .recipes-main {
+    display: table;
+    width: 100%;
+    background: #fff0ed;
+    border: 1px solid #6e6e6e;
+  }
+  .recipes-main__hd {
+    color: #fff;
+    .recipes-item {
+
+      border-top: none;
+      border-bottom: 1px solid #6e6e6e;;
+    }
+    .recipes-item__th {
+      position: relative;
+      background: #fbce8b url("../images/recipes-head.png") no-repeat center;
+      height: rem(80);
+      font-size: rem(22);
+      background-size: 100% 100%;
+      border-top: none;
+      border-bottom: 1px solid #6e6e6e;;
+    }
+    .time {
+      position: absolute;
+      left: 16%;
+      //transform: translateX(-100%) ;
+      bottom: rem(5);
+    }
+    .type {
+      position: absolute;
+      right: 16%;
+      //transform: translateX(100%) ;
+      top: rem(5);
+    }
+  }
+  .recipes-main__tr {
+    position: relative;
+    display: table-row;
+    &:last-child {
+      .recipes-item__th {
+        border-bottom: none;
+      }
+      .recipes-item {
+        border-bottom: none;
+      }
+    }
+  }
+  .recipes-item__th {
+    vertical-align: middle;
+    display: table-cell;
+    border-right: 1px solid #6e6e6e;
+    color: #fff;
+    text-align: center;
+    border-bottom: 0.075rem solid #fff;
+  }
+  .recipes-item {
+    vertical-align: middle;
+    width: 27%;
+    height: 100%;
+    display: table-cell;
+    text-align: center;
+    border-right: 0.075rem solid #fff;
+    border-bottom: 0.075rem solid #fff;
+    padding: rem(10) rem(15);
+    &:last-child {
+      border-right: none;
+    }
+  }
+}
+
+.btn-qk {
+  color: #222;
+  background: #dcdcdc;
+}
+.bg-ffb6bf {
+  background: #ffb6bf;
+}
+.bg-7ad2fa {
+  background: #7ad2fa;
+}
+.bg-ace8b4 {
+  background: #ace8b4;
+}
+.recipes-bg {
+  background: url("../images/recipes-bg.jpg") no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+}
 #recipesImg {
+  background: url("../images/recipes-bg.jpg") no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: rem(20) rem(20) rem(230);
   .weui-tab__bd-item {
     display: flex;
   }
   .uploader__input-box {
+    height: 100%;
     display: flex;
     background: #fff;
-    flex: 1;
+    //flex: 1;
     border-radius: 3px;
     >.bg {
       display: flex;
@@ -688,10 +826,6 @@ pre{
   }
 }
 .recipes-table {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  flex: 1;
   border: rem(3) solid #6e6e6e;
   .weui-flex {
     display: flex;
@@ -702,6 +836,7 @@ pre{
       justify-content: center;
       align-items: center;
       flex: 1.56;
+      min-height: rem(90);
       color: #222;
       font-size: rem(30);
       border-right: rem(3) solid #fff;
@@ -721,16 +856,43 @@ pre{
     }
   }
   .tb-head {
+    position: relative;
     flex: 1;
+    padding-left: rem(125);
     .weui-flex__item {
       display: flex;
       justify-content: center;
       align-items: center;
       color: #fff;
-      flex: 1.56;
+      //flex: 1.56;
+      flex: 1;
       font-size: rem(28);
       border-bottom: rem(3) solid #6e6e6e;
       &:first-child {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: rem(125);
+        font-size: rem(24);
+        >span {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 60%;
+          height: 50%;
+        }
+        >span:nth-of-type(1){
+          position: absolute;
+          left: 0px;
+          bottom: 0px;
+        }
+        >span:nth-of-type(2){
+          position: absolute;
+          right: 0px;
+          top: 0px;
+        }
+      }
+     /* &:first-child {
         position: relative;
         flex: 1;
         background: #fbce8b url("../images/recipes-head.png") no-repeat center;
@@ -753,7 +915,7 @@ pre{
           right: 0px;
           top: 0px;
         }
-      }
+      }*/
       &:nth-of-type(2) {
         background: #ffb6bf;
       }
@@ -818,10 +980,12 @@ pre{
 }
 
 .student-list__1 {
-  display: flex;
-  flex-wrap: wrap;
+  @extend .clearfix;
+  //display: flex;
+  //flex-wrap: wrap;
   padding: rem(20) rem(30) rem(10);
   .item {
+    float: left;
     display: flex;
     align-items: center;
     width: 33.33%;
@@ -949,6 +1113,7 @@ pre{
   font-size: rem(24);
   color: #ccc;
   .iconfont {
+    display: block;
     color: #cfcfcf;
     font-size: rem(70);
   }
@@ -1007,10 +1172,13 @@ pre{
   }
   .bind-avatar {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     height: rem(320);
-    padding: 0 rem(30);
+    padding: 0 15%;
+    @media (max-width: 480px) {
+      padding: 0 10%;
+    }
     .iconfont {
       color: #999999;
       font-size: rem(65);
@@ -1125,6 +1293,7 @@ pre{
     right: 0;
     top: 20%;
     font-size: rem(20);
+    z-index: 2;
     li {
       display: block;
     }
@@ -1200,18 +1369,23 @@ pre{
   }
   .value-added {
     display: flex;
-    justify-content: space-around;
-    padding: 5px 0 10px;
+    width: 100%;
+    //background: red;
+    justify-content: space-between;
+    //justify-content: space-around;
+    padding: 5px 5% 10px;
   }
 }
 
 $value-added: #6db1dc #96cca4 #f4b1cf #fa9576;
 .value-added__item {
+  //display: block;
   display: flex;
   flex-direction: column;
   align-items: center;
   font-size: rem(28);
   line-height: 2;
+  //flex: 1;
 
   .cover {
     width: rem(90);
@@ -1237,8 +1411,9 @@ $value-added: #6db1dc #96cca4 #f4b1cf #fa9576;
 
 .text-fa9576 { color: #fa9576; }
 .basic-services {
-  display: flex;
-  flex-wrap: wrap;
+  //display: flex;
+  //flex-wrap: wrap;
+  @extend .clearfix;
   padding: 0 rem(8);
   .basic-services__item {
     width: 33.333%;
@@ -1247,6 +1422,7 @@ $value-added: #6db1dc #96cca4 #f4b1cf #fa9576;
 .basic-services__item {
   position: relative;
   display: block;
+  float: left;
   padding: 0 rem(8);
   margin-bottom: rem(15);
   .cover:before {
@@ -1351,6 +1527,8 @@ $value-added: #6db1dc #96cca4 #f4b1cf #fa9576;
 @import "profile.scss";
 @import "growth.scss";
 @import "calendar.scss";
+@import "video.scss";
+@import "shuttleList";
 
 
 
